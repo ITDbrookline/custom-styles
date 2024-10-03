@@ -1,0 +1,36 @@
+.colorful-button {
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	text-decoration: none !important;
+	border-radius: 11px;
+	max-width: 100%;
+	padding: 0.25em;
+	color: #fff !important;
+	display: inline-block;
+	text-align: center;
+}
+
+.colorful-button--medium {
+	width: 14em;
+	font-size: 26px;
+}
+.colorful-button--small {
+	width: 12em;
+	font-size: 20px;
+}
+
+.colorful-button--blue {
+	background: #144fa7;
+}
+
+.colorful-button--red {
+	background: #b72200;
+}
+
+.colorful-button--green {
+	background: #17874d;
+}
+
+.colorful-button--orange {
+	background: #be5513;
+}
