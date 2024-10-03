@@ -1,4 +1,4 @@
-.test-colorful-button {
+.colorful-button {
 	font-family: "Open Sans", sans-serif;
 	font-weight: bold;
 	text-decoration: none !important;
@@ -10,7 +10,7 @@
 	text-align: center;
 }
 
-.test-colorful-button--medium {
+.colorful-button--medium {
 	width: 14em;
 	font-size: 26px;
 }
@@ -19,7 +19,7 @@
 	font-size: 20px;
 }
 
-.test-colorful-button--blue {
+.colorful-button--blue {
 	background: #144fa7;
 }
 
