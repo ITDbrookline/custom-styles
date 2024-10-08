@@ -14,7 +14,7 @@
 	width: 14em;
 	font-size: 26px;
 }
-.colorful-button--small {
+.test-colorful-button--small {
 	width: 12em;
 	font-size: 20px;
 }
@@ -23,14 +23,14 @@
 	background: #144fa7;
 }
 
-.colorful-button--red {
+.test-colorful-button--red {
 	background: #b72200;
 }
 
-.colorful-button--green {
+.test-colorful-button--green {
 	background: #17874d;
 }
 
-.colorful-button--orange {
+.test-colorful-button--orange {
 	background: #be5513;
 }
