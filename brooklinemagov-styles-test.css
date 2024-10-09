@@ -16,6 +16,13 @@ ul ul ul {
 	list-style-type: square !important;
 }
 
+ol ol {
+	list-style-type: lower-alpha !important;
+}
+ol ol ol {
+	list-style-type: lower-roman !important;
+}
+
 .test-colorful-button {
 	font-family: "Open Sans", sans-serif;
 	font-weight: bold;
