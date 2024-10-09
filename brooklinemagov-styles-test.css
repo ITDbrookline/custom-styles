@@ -7,13 +7,13 @@
 
 /*In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next is i-ii-iii.*/
 ul {
-	list-style-type: disc;
+	list-style-type: disc !important;
 }
 ul ul {
-	list-style-type: circle;
+	list-style-type: circle !important;
 }
 ul ul ul {
-	list-style-type: square;
+	list-style-type: square !important;
 }
 
 .test-colorful-button {
