@@ -1,8 +1,12 @@
 :root {
-	--main-blue: #144fa7;
-	--main-red: #b72200;
-	--dpw-green: #17874d;
-	--dpw-orange: #be5513;
+	--main-blue: hsl(216, 79%, 37%);
+	--main-blue-dark: hsl(216, 79%, 27%);
+	--main-red: hsl(11, 100%, 36%);
+	--main-red-dark: hsl(11, 100%, 26%);
+	--dpw-green: hsl(149, 71%, 31%);
+	--dpw-green-dark: hsl(149, 71%, 21%);
+	--dpw-orange: hsl(23, 82%, 41%);
+	--dpw-orange-dark: hsl(23, 82%, 31%);
 }
 
 /*In bulleted lists, the top level is filled-in circle, then empty circle, then square.
@@ -25,6 +29,7 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	list-style-type: lower-roman !important;
 }
 
+/*Accela-style buttons*/
 .test-colorful-button {
 	font-family: "Open Sans", sans-serif;
 	font-weight: bold;
@@ -36,6 +41,9 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	color: #fff !important;
 	display: inline-block;
 	text-align: center;
+	border: 1px solid rgba(#000, 0.05);
+	box-shadow: 1px 1px 2px rgba(#fff, 0.2);
+	transition: all 250ms linear;
 }
 
 .test-colorful-button--medium {
@@ -49,16 +57,53 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 
 .test-colorful-button--blue {
 	background: var(--main-blue);
+	border: 1px solid var(--main-blue-dark);
+	box-shadow: 0px 2px 0 var(--main-blue-dark), 2px 4px 6px var(--main-blue-dark);
+	&:hover {
+		background: var(--main-blue-dark);
+	}
 }
 
 .test-colorful-button--red {
 	background: var(--main-red);
+	&:hover {
+		background: var(--main-red-dark);
+	}
 }
 
 .test-colorful-button--green {
 	background: var(--dpw-green);
+	&:hover {
+		background: var(--dpw-green-dark);
+	}
 }
 
 .test-colorful-button--orange {
 	background: var(--dpw-orange);
+	&:hover {
+		background: var(--dpw-orange-dark);
+	}
 }
+/*test stuff*/
+/*a {
+	background: rgba($white, 0);
+	border-bottom: 1px solid;
+	&:hover {
+		background: rgba($white, 1);
+		color: $red;
+	}
+}
+
+.btn-3 {
+	border: 1px solid darken($red, 4%);
+	box-shadow: 0px 2px 0 darken($red, 5%), 2px 4px 6px darken($red, 2%);
+}
+
+.btn-3:hover {
+	border: 1px solid rgba(#000, 0.05);
+	box-shadow: 1px 1px 2px rgba(#fff, 0.2);
+	color: lighten($red, 18%);
+	text-shadow: -1px -1px 0 darken($red, 9.5%);
+	transition: all 250ms linear;
+}
+*/
