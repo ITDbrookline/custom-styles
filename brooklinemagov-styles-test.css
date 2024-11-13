@@ -46,7 +46,7 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	transition: all 250ms linear;
 
 	:before {
-		content: url("/icons/test2.svg");
+		content: url("icons/test2.svg");
 	}
 }
 
