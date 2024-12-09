@@ -1,8 +1,16 @@
 :root {
-	--main-blue: #144fa7;
-	--main-red: #b72200;
-	--dpw-green: #17874d;
-	--dpw-orange: #be5513;
+	--main-blue: hsl(216, 79%, 37%);
+	--main-blue-dark: hsl(216, 80%, 32%);
+	--main-blue-light: hsl(216, 80%, 42%);
+	--main-red: hsl(11, 100%, 36%);
+	--main-red-dark: hsl(11, 100%, 31%);
+	--main-red-light: hsl(11, 100%, 41%);
+	--dpw-green: hsl(149, 71%, 31%);
+	--dpw-green-dark: hsl(149, 71%, 26%);
+	--dpw-green-light: hsl(149, 71%, 36%);
+	--dpw-orange: hsl(23, 82%, 41%);
+	--dpw-orange-dark: hsl(23, 82%, 36%);
+	--dpw-orange-light: hsl(23, 82%, 46%);
 }
 
 /*In bulleted lists, the top level is filled-in circle, then empty circle, then square.
@@ -25,7 +33,8 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	list-style-type: lower-roman !important;
 }
 
-.colorful-button {
+.colorful-button,
+.itdb-button {
 	font-family: "Open Sans", sans-serif;
 	font-weight: bold;
 	text-decoration: none !important;
@@ -36,29 +45,72 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	color: #fff !important;
 	display: inline-block;
 	text-align: center;
+	transition: all 0.1s linear;
 }
 
-.colorful-button--medium {
+.colorful-button--medium,
+.itdb-button--medium {
 	width: 14em;
 	font-size: 22px;
 }
-.colorful-button--small {
+.colorful-button--small,
+.itdb-button--small {
 	width: 12em;
 	font-size: 18px;
 }
 
-.colorful-button--blue {
+.colorful-button--blue,
+.itdb-button--blue {
 	background: var(--main-blue);
+	box-shadow: 0px 2px 4px var(--main-blue-dark);
+	&:hover,
+	&:focus {
+		background: var(--main-blue-dark);
+	}
+	&:active {
+		background: var(--main-blue-light);
+		box-shadow: inset 0px 0px 8px var(--main-blue-dark);
+	}
 }
 
-.colorful-button--red {
+.colorful-button--red,
+.itdb-button--red {
 	background: var(--main-red);
+	box-shadow: 0px 2px 4px var(--main-red-dark);
+	&:hover,
+	&:focus {
+		background: var(--main-red-dark);
+	}
+	&:active {
+		background: var(--main-red-light);
+		box-shadow: inset 0px 0px 8px var(--main-red-dark);
+	}
 }
 
-.colorful-button--green {
+.colorful-button--green,
+.itdb-button--green {
 	background: var(--dpw-green);
+	box-shadow: 0px 2px 4px var(--dpw-green-dark);
+	&:hover,
+	&:focus {
+		background: var(--dpw-green-dark);
+	}
+	&:active {
+		background: var(--dpw-green-light);
+		box-shadow: inset 0px 0px 8px var(--dpw-green-dark);
+	}
 }
 
-.colorful-button--orange {
+.colorful-button--orange,
+.itdb-button--orange {
 	background: var(--dpw-orange);
+	box-shadow: 0px 2px 4px var(--dpw-orange-dark);
+	&:hover,
+	&:focus {
+		background: var(--dpw-orange-dark);
+	}
+	&:active {
+		background: var(--dpw-orange-light);
+		box-shadow: inset 0px 0px 8px var(--dpw-orange-dark);
+	}
 }
