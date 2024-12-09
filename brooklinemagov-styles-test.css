@@ -1,12 +1,16 @@
 :root {
 	--main-blue: hsl(216, 79%, 37%);
-	--main-blue-dark: hsl(216, 79%, 27%);
+	--main-blue-dark: hsl(216, 80%, 32%);
+	--main-blue-light: hsl(216, 80%, 42%);
 	--main-red: hsl(11, 100%, 36%);
-	--main-red-dark: hsl(11, 100%, 26%);
+	--main-red-dark: hsl(11, 100%, 31%);
+	--main-red-light: hsl(11, 100%, 41%);
 	--dpw-green: hsl(149, 71%, 31%);
-	--dpw-green-dark: hsl(149, 71%, 21%);
+	--dpw-green-dark: hsl(149, 71%, 26%);
+	--dpw-green-light: hsl(149, 71%, 36%);
 	--dpw-orange: hsl(23, 82%, 41%);
-	--dpw-orange-dark: hsl(23, 82%, 31%);
+	--dpw-orange-dark: hsl(23, 82%, 36%);
+	--dpw-orange-light: hsl(23, 82%, 46%);
 }
 
 /*In bulleted lists, the top level is filled-in circle, then empty circle, then square.
@@ -41,13 +45,7 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	color: #fff !important;
 	display: inline-block;
 	text-align: center;
-	border: 1px solid rgba(#000, 0.05);
-	box-shadow: 1px 1px 2px rgba(#fff, 0.2);
-	transition: all 250ms linear;
-
-	:before {
-		content: url("icons/test2.svg");
-	}
+	transition: all 0.1s linear;
 }
 
 .test-colorful-button--medium {
@@ -61,30 +59,53 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 
 .test-colorful-button--blue {
 	background: var(--main-blue);
-	border: 1px solid var(--main-blue-dark);
-	box-shadow: 0px 2px 0 var(--main-blue-dark), 2px 4px 6px var(--main-blue-dark);
-	&:hover {
+	box-shadow: 0px 2px 4px var(--main-blue-dark);
+	&:hover,
+	&:focus {
 		background: var(--main-blue-dark);
+	}
+	&:active {
+		background: var(--main-blue-light);
+		box-shadow: inset 0px 0px 8px var(--main-blue-dark);
 	}
 }
 
 .test-colorful-button--red {
 	background: var(--main-red);
-	&:hover {
+	box-shadow: 0px 2px 4px var(--main-red-dark);
+	&:hover,
+	&:focus {
 		background: var(--main-red-dark);
+	}
+	&:active {
+		background: var(--main-red-light);
+		box-shadow: inset 0px 0px 8px var(--main-red-dark);
 	}
 }
 
 .test-colorful-button--green {
 	background: var(--dpw-green);
-	&:hover {
+	box-shadow: 0px 2px 4px var(--dpw-green-dark);
+	&:hover,
+	&:focus {
 		background: var(--dpw-green-dark);
+	}
+	&:active {
+		background: var(--dpw-green-light);
+		box-shadow: inset 0px 0px 8px var(--dpw-green-dark);
 	}
 }
 
 .test-colorful-button--orange {
 	background: var(--dpw-orange);
-	&:hover {
+	box-shadow: 0px 2px 4px var(--dpw-orange-dark);
+
+	&:hover,
+	&:focus {
 		background: var(--dpw-orange-dark);
+	}
+	&:active {
+		background: var(--dpw-orange-light);
+		box-shadow: inset 0px 0px 8px var(--dpw-orange-dark);
 	}
 }
