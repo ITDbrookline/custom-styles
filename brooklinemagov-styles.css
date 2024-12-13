@@ -62,55 +62,55 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 .colorful-button--blue,
 .itdb-button--blue {
 	background: var(--main-blue);
-	box-shadow: 0px 2px 4px var(--main-blue-dark);
+	box-shadow: 0px 2px 4px;
 	&:hover,
 	&:focus {
 		background: var(--main-blue-dark);
 	}
 	&:active {
 		background: var(--main-blue-light);
-		box-shadow: inset 0px 0px 8px var(--main-blue-dark);
+		box-shadow: inset 0px 0px 8px;
 	}
 }
 
 .colorful-button--red,
 .itdb-button--red {
 	background: var(--main-red);
-	box-shadow: 0px 2px 4px var(--main-red-dark);
+	box-shadow: 0px 2px 4px;
 	&:hover,
 	&:focus {
 		background: var(--main-red-dark);
 	}
 	&:active {
 		background: var(--main-red-light);
-		box-shadow: inset 0px 0px 8px var(--main-red-dark);
+		box-shadow: inset 0px 0px 8px;
 	}
 }
 
 .colorful-button--green,
 .itdb-button--green {
 	background: var(--dpw-green);
-	box-shadow: 0px 2px 4px var(--dpw-green-dark);
+	box-shadow: 0px 2px 4px;
 	&:hover,
 	&:focus {
 		background: var(--dpw-green-dark);
 	}
 	&:active {
 		background: var(--dpw-green-light);
-		box-shadow: inset 0px 0px 8px var(--dpw-green-dark);
+		box-shadow: inset 0px 0px 8px;
 	}
 }
 
 .colorful-button--orange,
 .itdb-button--orange {
 	background: var(--dpw-orange);
-	box-shadow: 0px 2px 4px var(--dpw-orange-dark);
+	box-shadow: 0px 2px 4px;
 	&:hover,
 	&:focus {
 		background: var(--dpw-orange-dark);
 	}
 	&:active {
 		background: var(--dpw-orange-light);
-		box-shadow: inset 0px 0px 8px var(--dpw-orange-dark);
+		box-shadow: inset 0px 0px 8px;
 	}
 }
