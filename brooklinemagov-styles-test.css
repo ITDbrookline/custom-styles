@@ -34,7 +34,8 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 }
 
 /*Accela-style buttons*/
-.test-colorful-button {
+.test-colorful-button,
+.itdb-button {
 	font-family: "Open Sans", sans-serif;
 	font-weight: bold;
 	text-decoration: none !important;
@@ -46,66 +47,67 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	display: inline-block;
 	text-align: center;
 	transition: all 0.1s linear;
+	box-shadow: 0px 2px 3px -1px black;
+	&:active {
+		box-shadow: inset 0px 1px 3px -1px black;
+	}
 }
 
-.test-colorful-button--medium {
+.test-colorful-button--medium,
+.itdb-button--medium {
 	width: 14em;
 	font-size: 22px;
 }
-.test-colorful-button--small {
+.test-colorful-button--small,
+.itdb-button--medium {
 	width: 12em;
 	font-size: 18px;
 }
 
-.test-colorful-button--blue {
+.test-colorful-button--blue,
+.itdb-button--blue {
 	background: var(--main-blue);
-	box-shadow: 0px 2px 4px var(--main-blue-dark);
 	&:hover,
 	&:focus {
 		background: var(--main-blue-dark);
 	}
 	&:active {
 		background: var(--main-blue-light);
-		box-shadow: inset 0px 0px 8px var(--main-blue-dark);
 	}
 }
 
-.test-colorful-button--red {
+.test-colorful-button--red,
+.itdb-button--red {
 	background: var(--main-red);
-	box-shadow: 0px 2px 4px var(--main-red-dark);
 	&:hover,
 	&:focus {
 		background: var(--main-red-dark);
 	}
 	&:active {
 		background: var(--main-red-light);
-		box-shadow: inset 0px 0px 8px var(--main-red-dark);
 	}
 }
 
-.test-colorful-button--green {
+.test-colorful-button--green,
+.itdb-button--green {
 	background: var(--dpw-green);
-	box-shadow: 0px 2px 4px var(--dpw-green-dark);
 	&:hover,
 	&:focus {
 		background: var(--dpw-green-dark);
 	}
 	&:active {
 		background: var(--dpw-green-light);
-		box-shadow: inset 0px 0px 8px var(--dpw-green-dark);
 	}
 }
 
-.test-colorful-button--orange {
+.test-colorful-button--orange,
+.itdb-button--orange {
 	background: var(--dpw-orange);
-	box-shadow: 0px 2px 4px var(--dpw-orange-dark);
-
 	&:hover,
 	&:focus {
 		background: var(--dpw-orange-dark);
 	}
 	&:active {
 		background: var(--dpw-orange-light);
-		box-shadow: inset 0px 0px 8px var(--dpw-orange-dark);
 	}
 }
