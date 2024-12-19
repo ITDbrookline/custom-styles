@@ -2,10 +2,10 @@
 	--main-blue: hsl(216, 79%, 37%);
 	--main-blue-dark: hsl(216, 80%, 32%);
 	--main-blue-light: hsl(216, 80%, 42%);
-	--main-red: hsl(11, 100%, 36%);
+	--main-red: #b82200;
 	--main-red-dark: hsl(11, 100%, 31%);
 	--main-red-light: hsl(11, 100%, 41%);
-	--dpw-green: hsl(149, 71%, 31%);
+	--dpw-green: #17874d;
 	--dpw-green-dark: hsl(149, 71%, 26%);
 	--dpw-green-light: hsl(149, 71%, 36%);
 	--dpw-orange: hsl(23, 82%, 41%);
