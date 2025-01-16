@@ -17,24 +17,24 @@
 In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next is i-ii-iii.*/
 
 .fr-view ul,
-.relatedDocuments ul {
+.bullets ul {
 	list-style-type: disc !important;
 }
 .fr-view ul ul,
-.relatedDocuments ul ul {
+.bullets ul ul {
 	list-style-type: circle !important;
 }
 .fr-view ul ul ul,
-.relatedDocuments ul ul ul {
+.bullets ul ul ul {
 	list-style-type: square !important;
 }
 
 .fr-view ol ol,
-.relatedDocuments ol ol {
+.bullets ol ol {
 	list-style-type: lower-alpha !important;
 }
 .fr-view ol ol ol,
-.relatedDocuments ol ol ol {
+.bullets ol ol ol {
 	list-style-type: lower-roman !important;
 }
 
