@@ -125,7 +125,7 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 
 .itdb-highlight-box {
 	/* the 'popped out' text boxes with grey backgrounds */
-	margin: 0;
+	margin: 0.5em;
 	padding: 0.4em;
 	background-color: rgb(209, 213, 216);
 	border: 1px solid black;
