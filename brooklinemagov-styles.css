@@ -40,7 +40,7 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 
 .colorful-button,
 .itdb-button {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	text-decoration: none !important;
 	border-radius: 11px;
@@ -121,4 +121,15 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	border-radius: 15px;
 	overflow: hidden;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.itdb-highlight-box {
+	/* the 'popped out' text boxes with grey backgrounds */
+	margin: 0;
+	padding: 0.4em;
+	background-color: rgb(209, 213, 216);
+	border: 1px solid black;
+	border-radius: 15px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
 }
