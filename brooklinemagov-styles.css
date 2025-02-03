@@ -16,7 +16,7 @@
 *,
 *::before,
 *::after {
-	scroll-margin-top: 6rem;
+	scroll-margin-top: 7rem;
 } /*When the user is forcibly scrolled to a particular part of the screen, scroll slightly too high so header doesn't overlap content.*/
 
 @media (prefers-reduced-motion: no-preference) {
