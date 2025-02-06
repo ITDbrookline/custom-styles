@@ -1,16 +1,16 @@
 :root {
-	--main-blue: hsl(216, 79%, 37%);
-	--main-blue-dark: hsl(216, 80%, 32%);
-	--main-blue-light: hsl(216, 80%, 42%);
-	--main-red: #b82200;
-	--main-red-dark: hsl(11, 100%, 31%);
-	--main-red-light: hsl(11, 100%, 41%);
-	--dpw-green: #17874d;
-	--dpw-green-dark: hsl(149, 71%, 26%);
-	--dpw-green-light: hsl(149, 71%, 36%);
-	--dpw-orange: hsl(23, 82%, 41%);
-	--dpw-orange-dark: hsl(23, 82%, 36%);
-	--dpw-orange-light: hsl(23, 82%, 46%);
+	--main-info-color: hsl(216, 79%, 37%);
+	--main-info-color-dark: hsl(216, 80%, 32%);
+	--main-info-color-light: hsl(216, 80%, 42%);
+	--main-action-color: #b82200;
+	--main-action-color-dark: hsl(11, 100%, 31%);
+	--main-action-color-light: hsl(11, 100%, 41%);
+	--dpw-info-color: #17874d;
+	--dpw-info-color-dark: hsl(149, 71%, 26%);
+	--dpw-info-color-light: hsl(149, 71%, 36%);
+	--dpw-action-color: hsl(23, 82%, 41%);
+	--dpw-action-color-dark: hsl(23, 82%, 36%);
+	--dpw-action-color-light: hsl(23, 82%, 46%);
 }
 
 *,
@@ -81,50 +81,54 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 }
 
 .colorful-button--blue,
-.itdb-button--blue {
-	background: var(--main-blue);
+.itdb-button--blue,
+.itdb-button--info {
+	background: var(--main-info-color);
 	&:hover,
 	&:focus {
-		background: var(--main-blue-dark);
+		background: var(--main-info-color-dark);
 	}
 	&:active {
-		background: var(--main-blue-light);
+		background: var(--main-info-color-light);
 	}
 }
 
 .colorful-button--red,
-.itdb-button--red {
-	background: var(--main-red);
+.itdb-button--red,
+.itdb-button--action {
+	background: var(--main-action-color);
 	&:hover,
 	&:focus {
-		background: var(--main-red-dark);
+		background: var(--main-action-color-dark);
 	}
 	&:active {
-		background: var(--main-red-light);
+		background: var(--main-action-color-light);
 	}
 }
 
 .colorful-button--green,
-.itdb-button--green {
-	background: var(--dpw-green);
+.itdb-button--green,
+.itdb-button--dpw-info {
+	background: var(--dpw-info-color);
 	&:hover,
 	&:focus {
-		background: var(--dpw-green-dark);
+		background: var(--dpw-info-color-dark);
 	}
 	&:active {
-		background: var(--dpw-green-light);
+		background: var(--dpw-info-color-light);
 	}
 }
 
 .colorful-button--orange,
-.itdb-button--orange {
-	background: var(--dpw-orange);
+.itdb-button--orange,
+.itdb-button--dpw-action {
+	background: var(--dpw-action-color);
 	&:hover,
 	&:focus {
-		background: var(--dpw-orange-dark);
+		background: var(--dpw-action-color-dark);
 	}
 	&:active {
-		background: var(--dpw-orange-light);
+		background: var(--dpw-action-color-light);
 	}
 }
 
