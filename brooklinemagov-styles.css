@@ -157,5 +157,9 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 
 td.gsib_b {
 	/*kills inexplicable <td> that makes google search bar look bad*/
-	display: none;
+	/* display: none; */
+}
+table.gsc-search-box {
+	/*In Google Search Bar and Results, counteracts the CivicPlus default bg color for tables*/
+	background-color: white;
 }
