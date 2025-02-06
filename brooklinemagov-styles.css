@@ -155,6 +155,11 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	border-radius: 16px;
 	overflow: hidden;
 }
+.gsc-input-box {
+	/*rounds the corners on Google Search Bar*/
+	border-radius: 8px;
+	overflow: hidden;
+}
 table.gsc-search-box {
 	background-color: transparent;
 }
@@ -162,14 +167,12 @@ table.gsc-input {
 	/*In Google Search Bar and Results, counteracts the CivicPlus default bg color for tables*/
 	background-color: white;
 }
-.gsc-input-box {
-	/*rounds the corners on Google Search Bar corners*/
-	border-radius: 8px;
-	overflow: hidden;
-}
 .gsst_b {
+	/*helps to shrink the "X" button that appears when you type in text.*/
 	font-size: 0px;
 }
 .gscb_a {
+	/*ALSO helps to shrink the "X" button that appears when you type in text.*/
+	/*I don't know why, but both of these are necessary to do so*/
 	line-height: 24px;
 }
