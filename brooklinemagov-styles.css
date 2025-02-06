@@ -149,3 +149,13 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 }
+
+.gsc-control-cse {
+	/*rounds the borders on Google Search Results*/
+	border-radius: 16px;
+}
+
+td.gsib_b {
+	/*kills inexplicable <td> that makes google search bar look bad*/
+	display: none;
+}
