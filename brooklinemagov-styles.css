@@ -153,10 +153,15 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 .gsc-control-cse {
 	/*rounds the borders on Google Search Results*/
 	border-radius: 16px;
+	overflow: hidden;
 }
-
 table.gsc-search-box,
 table.gsc-input {
 	/*In Google Search Bar and Results, counteracts the CivicPlus default bg color for tables*/
-	background-color: red;
+	background-color: white;
+}
+.gsc-input-box {
+	/*rounds the corners on Google Search Bar corners*/
+	border-radius: 8px;
+	overflow: hidden;
 }
