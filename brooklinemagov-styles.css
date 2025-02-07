@@ -162,7 +162,7 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 }
 #___gcse_0 table,
 #___gcse_1 table {
-	background-color: white;
+	background-color: transparent;
 }
 
 table.gsc-search-box {
