@@ -160,12 +160,17 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	border-radius: 8px;
 	overflow: hidden;
 }
+#___gcse_0 table,
+#___gcse_1 table {
+	background-color: white;
+}
+
 table.gsc-search-box {
-	background-color: transparent;
+	/* background-color: transparent; */
 }
 table.gsc-input {
 	/*In Google Search Bar and Results, counteracts the CivicPlus default bg color for tables*/
-	background-color: white;
+	/* background-color: white; */
 }
 .gsst_b {
 	/*helps to shrink the "X" button that appears when you type in text.*/
