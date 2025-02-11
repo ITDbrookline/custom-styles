@@ -183,5 +183,6 @@ table.gsc-input {
 }
 
 #gsc-i-id1 {
-	background: url('icons/search_icon_11pt.png');
+	background: url('icons/search_icon_11pt.png') left center no-repeat
+		rgb(255, 255, 255) !important;
 }
