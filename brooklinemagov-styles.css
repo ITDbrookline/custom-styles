@@ -161,7 +161,8 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	overflow: hidden;
 }
 #___gcse_0 table,
-#___gcse_1 table {
+#___gcse_1 table,
+#___gcse_2 table {
 	background-color: transparent;
 }
 
