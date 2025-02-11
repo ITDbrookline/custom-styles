@@ -176,3 +176,7 @@ table.gsc-input {
 	/*I don't know why, but both of these are necessary to do so*/
 	line-height: 24px;
 }
+
+#gsc-i-id1 {
+	background: url('icons/search_icon_11pt.png');
+}
