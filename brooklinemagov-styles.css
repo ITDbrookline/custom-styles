@@ -29,15 +29,18 @@
 In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next is i-ii-iii.*/
 
 .fr-view ul,
-.bullets ul {
+.bullets ul,
+ol.bullets {
 	list-style-type: disc !important;
 }
 .fr-view ul ul,
-.bullets ul ul {
+.bullets ul ul,
+ol ol.bullets {
 	list-style-type: circle !important;
 }
 .fr-view ul ul ul,
-.bullets ul ul ul {
+.bullets ul ul ul,
+ol ol ol.bullets {
 	list-style-type: square !important;
 }
 
