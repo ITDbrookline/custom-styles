@@ -132,8 +132,9 @@ In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next 
 	}
 }
 
-.itdb-civicclerk-calendar {
-	border: 1px solid black;
+.itdb-civicclerk-calendar,
+.itdb-board-membership {
+	border: 1px solid #575757;
 	border-radius: 15px;
 	overflow: hidden;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
