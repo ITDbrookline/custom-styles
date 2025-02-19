@@ -2,10 +2,10 @@
 	--itdb-main-info-color: hsl(216, 79%, 37%);
 	--itdb-main-info-color-dark: hsl(216, 80%, 32%);
 	--itdb-main-info-color-light: hsl(216, 80%, 42%);
-	--itdb-main-action-color: #b82200;
+	--itdb-main-action-color: hsl(11, 100%, 36%);
 	--itdb-main-action-color-dark: hsl(11, 100%, 31%);
 	--itdb-main-action-color-light: hsl(11, 100%, 41%);
-	--itdb-dpw-info-color: #17874d;
+	--itdb-dpw-info-color: hsl(149, 71%, 31%);
 	--itdb-dpw-info-color-dark: hsl(149, 71%, 26%);
 	--itdb-dpw-info-color-light: hsl(149, 71%, 36%);
 	--itdb-dpw-action-color: hsl(23, 82%, 41%);

@@ -1,5 +1,10 @@
 :root {
-	--itdb-dark-blue: #1d336f;
+	--itdb-info-color: hsl(224, 59%, 27%);
+	--itdb-info-color-dark: hsl(224, 59%, 22%);
+	--itdb-info-color-light: hsl(224, 59%, 32%);
+	--itdb-action-color: hsl(2, 57%, 39%);
+	--itdb-action-color-dark: hsl(2, 57%, 34%);
+	--itdb-action-color-light: hsl(2, 57%, 44%);
 	--itdb-gold: #f6d00a;
 }
 /* Commented out because I don't think it was working on Police Site.
@@ -78,24 +83,24 @@ ol ol ol.bullets {
 }
 
 .itdb-button--info {
-	background: var(--main-info-color);
+	background: var(--itdb-info-color);
 	&:hover,
 	&:focus {
-		background: var(--main-info-color-dark);
+		background: var(--itdb-info-color-dark);
 	}
 	&:active {
-		background: var(--main-info-color-light);
+		background: var(--itdb-info-color-light);
 	}
 }
 
 .itdb-button--action {
-	background: var(--main-action-color);
+	background: var(--itdb-action-color);
 	&:hover,
 	&:focus {
-		background: var(--main-action-color-dark);
+		background: var(--itdb-action-color-dark);
 	}
 	&:active {
-		background: var(--main-action-color-light);
+		background: var(--itdb-action-color-light);
 	}
 }
 
