@@ -1,16 +1,16 @@
 :root {
-	--main-info-color: hsl(216, 79%, 37%);
-	--main-info-color-dark: hsl(216, 80%, 32%);
-	--main-info-color-light: hsl(216, 80%, 42%);
-	--main-action-color: #b82200;
-	--main-action-color-dark: hsl(11, 100%, 31%);
-	--main-action-color-light: hsl(11, 100%, 41%);
-	--dpw-info-color: #17874d;
-	--dpw-info-color-dark: hsl(149, 71%, 26%);
-	--dpw-info-color-light: hsl(149, 71%, 36%);
-	--dpw-action-color: hsl(23, 82%, 41%);
-	--dpw-action-color-dark: hsl(23, 82%, 36%);
-	--dpw-action-color-light: hsl(23, 82%, 46%);
+	--itdb-main-info-color: hsl(216, 79%, 37%);
+	--itdb-main-info-color-dark: hsl(216, 80%, 32%);
+	--itdb-main-info-color-light: hsl(216, 80%, 42%);
+	--itdb-main-action-color: #b82200;
+	--itdb-main-action-color-dark: hsl(11, 100%, 31%);
+	--itdb-main-action-color-light: hsl(11, 100%, 41%);
+	--itdb-dpw-info-color: #17874d;
+	--itdb-dpw-info-color-dark: hsl(149, 71%, 26%);
+	--itdb-dpw-info-color-light: hsl(149, 71%, 36%);
+	--itdb-dpw-action-color: hsl(23, 82%, 41%);
+	--itdb-dpw-action-color-dark: hsl(23, 82%, 36%);
+	--itdb-dpw-action-color-light: hsl(23, 82%, 46%);
 }
 
 *,
@@ -86,52 +86,52 @@ ol ol ol.bullets {
 .colorful-button--blue,
 .itdb-button--blue,
 .itdb-button--info {
-	background: var(--main-info-color);
+	background: var(--itdb-main-info-color);
 	&:hover,
 	&:focus {
-		background: var(--main-info-color-dark);
+		background: var(--itdb-main-info-color-dark);
 	}
 	&:active {
-		background: var(--main-info-color-light);
+		background: var(--itdb-main-info-color-light);
 	}
 }
 
 .colorful-button--red,
 .itdb-button--red,
 .itdb-button--action {
-	background: var(--main-action-color);
+	background: var(--itdb-main-action-color);
 	&:hover,
 	&:focus {
-		background: var(--main-action-color-dark);
+		background: var(--itdb-main-action-color-dark);
 	}
 	&:active {
-		background: var(--main-action-color-light);
+		background: var(--itdb-main-action-color-light);
 	}
 }
 
 .colorful-button--green,
 .itdb-button--green,
 .itdb-button--dpw-info {
-	background: var(--dpw-info-color);
+	background: var(--itdb-dpw-info-color);
 	&:hover,
 	&:focus {
-		background: var(--dpw-info-color-dark);
+		background: var(--itdb-dpw-info-color-dark);
 	}
 	&:active {
-		background: var(--dpw-info-color-light);
+		background: var(--itdb-dpw-info-color-light);
 	}
 }
 
 .colorful-button--orange,
 .itdb-button--orange,
 .itdb-button--dpw-action {
-	background: var(--dpw-action-color);
+	background: var(--itdb-dpw-action-color);
 	&:hover,
 	&:focus {
-		background: var(--dpw-action-color-dark);
+		background: var(--itdb-dpw-action-color-dark);
 	}
 	&:active {
-		background: var(--dpw-action-color-light);
+		background: var(--itdb-dpw-action-color-light);
 	}
 }
 
