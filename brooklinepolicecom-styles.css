@@ -129,15 +129,10 @@ ol ol ol.bullets {
 	overflow: hidden;
 }
 
-/* may not be relevant on police site
-#___gcse_0 table,
-#___gcse_1 table,
-#___gcse_2 table, {
-	background-color: transparent;
-}
-*/
-
-td.gsc-input {
+/*NOTICE that this targets the TDs, not the tables like on BrooklineMA.gov*/
+#___gcse_0 td,
+#___gcse_1 td,
+#___gcse_2 td {
 	background-color: transparent;
 }
 
