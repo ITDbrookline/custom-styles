@@ -128,9 +128,16 @@ ol ol ol.bullets {
 	border-radius: 8px;
 	overflow: hidden;
 }
+
+/* may not be relevant on police site
 #___gcse_0 table,
 #___gcse_1 table,
-#___gcse_2 table {
+#___gcse_2 table, {
+	background-color: transparent;
+}
+*/
+
+td.gsc-input {
 	background-color: transparent;
 }
 
