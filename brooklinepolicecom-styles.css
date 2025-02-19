@@ -1,0 +1,148 @@
+:root {
+	--main-info-color: hsl(216, 79%, 37%);
+	--main-info-color-dark: hsl(216, 80%, 32%);
+	--main-info-color-light: hsl(216, 80%, 42%);
+	--main-action-color: #b82200;
+	--main-action-color-dark: hsl(11, 100%, 31%);
+	--main-action-color-light: hsl(11, 100%, 41%);
+	--dpw-info-color: #17874d;
+	--dpw-info-color-dark: hsl(149, 71%, 26%);
+	--dpw-info-color-light: hsl(149, 71%, 36%);
+	--dpw-action-color: hsl(23, 82%, 41%);
+	--dpw-action-color-dark: hsl(23, 82%, 36%);
+	--dpw-action-color-light: hsl(23, 82%, 46%);
+}
+
+*,
+*::before,
+*::after {
+	scroll-margin-top: 7rem;
+} /*When the user is forcibly scrolled to a particular part of the screen, scroll slightly too high so header doesn't overlap content.*/
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	} /*When the user's device has no preference, default to smooth-scrolling*/
+}
+
+/*In bulleted lists, the top level is filled-in circle, then empty circle, then square.
+In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next is i-ii-iii.*/
+
+.fr-view ul,
+.bullets ul,
+ol.bullets {
+	list-style-type: disc !important;
+}
+.fr-view ul ul,
+.bullets ul ul,
+ol ol.bullets {
+	list-style-type: circle !important;
+}
+.fr-view ul ul ul,
+.bullets ul ul ul,
+ol ol ol.bullets {
+	list-style-type: square !important;
+}
+
+.fr-view ol ol,
+.bullets ol ol {
+	list-style-type: lower-alpha !important;
+}
+.fr-view ol ol ol,
+.bullets ol ol ol {
+	list-style-type: lower-roman !important;
+}
+
+.itdb-button {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-decoration: none !important;
+	border-radius: 11px;
+	max-width: 100%;
+	margin: 0.25em auto;
+	padding: 0.25em;
+	color: #fff !important;
+	display: inline-block;
+	text-align: center;
+	transition: all 0.1s linear;
+	box-shadow: 0px 2px 3px -1px black;
+	&:active {
+		box-shadow: inset 0px 1px 3px -1px black;
+	}
+}
+
+.itdb-button--medium {
+	width: 14em;
+	font-size: 22px;
+}
+.itdb-button--small {
+	width: 12em;
+	font-size: 18px;
+}
+
+.itdb-button--info {
+	background: var(--main-info-color);
+	&:hover,
+	&:focus {
+		background: var(--main-info-color-dark);
+	}
+	&:active {
+		background: var(--main-info-color-light);
+	}
+}
+
+.itdb-button--action {
+	background: var(--main-action-color);
+	&:hover,
+	&:focus {
+		background: var(--main-action-color-dark);
+	}
+	&:active {
+		background: var(--main-action-color-light);
+	}
+}
+
+.itdb-civicclerk-calendar,
+.itdb-board-membership {
+	border: 1px solid #575757;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.itdb-highlight-box {
+	/* the 'popped out' text boxes with grey backgrounds */
+	margin: 0.5em;
+	padding: 0.4em;
+	background-color: rgb(209, 213, 216);
+	border: 1px solid black;
+	border-radius: 15px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+
+.gsc-control-cse {
+	/*rounds the borders on Google Search Results*/
+	border-radius: 16px;
+	overflow: hidden;
+}
+.gsc-input-box {
+	/*rounds the corners on Google Search Bar*/
+	border-radius: 8px;
+	overflow: hidden;
+}
+#___gcse_0 table,
+#___gcse_1 table,
+#___gcse_2 table {
+	background-color: transparent;
+}
+
+.gsst_b {
+	/*helps to shrink the "X" button that appears when you type in text.*/
+	font-size: 0px;
+}
+.gscb_a {
+	/*ALSO helps to shrink the "X" button that appears when you type in text.*/
+	/*I don't know why, but both of these are necessary to do so*/
+	line-height: 24px;
+}
