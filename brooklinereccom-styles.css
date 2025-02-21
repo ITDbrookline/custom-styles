@@ -12,15 +12,13 @@
 	--itdb-orange: #f78f2a;
 	--itdb-red: #dc4c47;
 }
-/* Commented out because I don't think it was working on Rec Site.
-When the user is forcibly scrolled to a particular part of the screen, this script will make it scroll slightly too high so header doesn't overlap content.
 
 *,
 *::before,
 *::after {
+	/*When the user is forcibly scrolled to a particular part of the screen, scroll slightly too high so header doesn't overlap content.*/
 	scroll-margin-top: 7rem;
 }
-  */
 
 /* Commented out because I don't think it was working on Rec Site.
 When the user's device has no preference, this script would default to smooth-scrolling
