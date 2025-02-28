@@ -1,16 +1,8 @@
 :root {
 	--itdb-main-info-color: hsl(216, 79%, 37%);
-	--itdb-main-info-color-dark: hsl(216, 80%, 32%);
-	--itdb-main-info-color-light: hsl(216, 80%, 42%);
 	--itdb-main-action-color: hsl(11, 100%, 36%);
-	--itdb-main-action-color-dark: hsl(11, 100%, 31%);
-	--itdb-main-action-color-light: hsl(11, 100%, 41%);
 	--itdb-dpw-info-color: hsl(149, 71%, 31%);
-	--itdb-dpw-info-color-dark: hsl(149, 71%, 26%);
-	--itdb-dpw-info-color-light: hsl(149, 71%, 36%);
 	--itdb-dpw-action-color: hsl(23, 82%, 41%);
-	--itdb-dpw-action-color-dark: hsl(23, 82%, 36%);
-	--itdb-dpw-action-color-light: hsl(23, 82%, 46%);
 }
 
 *,
@@ -89,10 +81,10 @@ ol ol ol.bullets {
 	background: var(--itdb-main-info-color);
 	&:hover,
 	&:focus {
-		background: var(--itdb-main-info-color-dark);
+		background: color-mix(in hsl, var(--itdb-main-info-color), black 20%);
 	}
 	&:active {
-		background: var(--itdb-main-info-color-light);
+		background: color-mix(in hsl, var(--itdb-main-info-color), white 10%);
 	}
 }
 
@@ -102,10 +94,10 @@ ol ol ol.bullets {
 	background: var(--itdb-main-action-color);
 	&:hover,
 	&:focus {
-		background: var(--itdb-main-action-color-dark);
+		background: color-mix(in hsl, var(--itdb-main-action-color), black 20%);
 	}
 	&:active {
-		background: var(--itdb-main-action-color-light);
+		background: color-mix(in hsl, var(--itdb-main-action-color), white 10%);
 	}
 }
 
@@ -115,10 +107,10 @@ ol ol ol.bullets {
 	background: var(--itdb-dpw-info-color);
 	&:hover,
 	&:focus {
-		background: var(--itdb-dpw-info-color-dark);
+		background: color-mix(in hsl, var(--itdb-dpw-info-color), black 20%);
 	}
 	&:active {
-		background: var(--itdb-dpw-info-color-light);
+		background: color-mix(in hsl, var(--itdb-dpw-info-color), white 10%);
 	}
 }
 
@@ -128,10 +120,10 @@ ol ol ol.bullets {
 	background: var(--itdb-dpw-action-color);
 	&:hover,
 	&:focus {
-		background: var(--itdb-dpw-action-color-dark);
+		background: color-mix(in hsl, var(--itdb-dpw-action-color), black 20%);
 	}
 	&:active {
-		background: var(--itdb-dpw-action-color-light);
+		background: color-mix(in hsl, var(--itdb-dpw-action-color), white 10%);
 	}
 }
 
