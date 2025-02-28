@@ -1,8 +1,8 @@
 :root {
-	--itdb-main-info-color: hsl(216, 79%, 37%);
-	--itdb-main-action-color: hsl(11, 100%, 36%);
-	--itdb-dpw-info-color: hsl(149, 71%, 31%);
-	--itdb-dpw-action-color: hsl(23, 82%, 41%);
+	--itdb-main-info-color: #144fa9;
+	--itdb-main-action-color: #b82200;
+	--itdb-dpw-info-color: #17874d;
+	--itdb-dpw-action-color: #be5513;
 }
 
 *,
