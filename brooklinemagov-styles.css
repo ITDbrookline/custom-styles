@@ -75,55 +75,49 @@ ol ol ol.bullets {
 	font-size: 18px;
 }
 
-.colorful-button--blue,
-.itdb-button--blue,
-.itdb-button--info {
-	background: var(--itdb-main-info-color);
-	&:hover,
-	&:focus {
-		background: color-mix(in hsl, var(--itdb-main-info-color), black 20%);
-	}
-	&:active {
-		background: color-mix(in hsl, var(--itdb-main-info-color), white 10%);
-	}
-}
-
 .colorful-button--red,
 .itdb-button--red,
 .itdb-button--action {
-	background: var(--itdb-main-action-color);
-	&:hover,
-	&:focus {
-		background: color-mix(in hsl, var(--itdb-main-action-color), black 20%);
-	}
-	&:active {
-		background: color-mix(in hsl, var(--itdb-main-action-color), white 10%);
-	}
+	--itdb-button-color: var(--itdb-main-action-color);
+}
+
+.colorful-button--blue,
+.itdb-button--blue,
+.itdb-button--info {
+	--itdb-button-color: var(--itdb-main-info-color);
 }
 
 .colorful-button--green,
 .itdb-button--green,
 .itdb-button--dpw-info {
-	background: var(--itdb-dpw-info-color);
-	&:hover,
-	&:focus {
-		background: color-mix(in hsl, var(--itdb-dpw-info-color), black 20%);
-	}
-	&:active {
-		background: color-mix(in hsl, var(--itdb-dpw-info-color), white 10%);
-	}
+	--itdb-button-color: var(--itdb-dpw-info-color);
 }
 
 .colorful-button--orange,
 .itdb-button--orange,
 .itdb-button--dpw-action {
-	background: var(--itdb-dpw-action-color);
+	--itdb-button-color: var(--itdb-dpw-action-color);
+}
+
+.colorful-button--blue,
+.itdb-button--blue,
+.itdb-button--info,
+.colorful-button--red,
+.itdb-button--red,
+.itdb-button--action,
+.colorful-button--green,
+.itdb-button--green,
+.itdb-button--dpw-info,
+.colorful-button--orange,
+.itdb-button--orange,
+.itdb-button--dpw-action {
+	background: var(--itdb-button-color); /*Give the button the color declared above, then make it darker or lighter if hovered or activated.*/
 	&:hover,
 	&:focus {
-		background: color-mix(in hsl, var(--itdb-dpw-action-color), black 20%);
+		background: color-mix(in hsl, var(--itdb-button-color), black 20%);
 	}
 	&:active {
-		background: color-mix(in hsl, var(--itdb-dpw-action-color), white 10%);
+		background: color-mix(in hsl, var(--itdb-button-color), white 10%);
 	}
 }
 

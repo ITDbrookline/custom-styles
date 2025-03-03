@@ -82,24 +82,22 @@ ol ol ol.bullets {
 }
 
 .itdb-button--info {
-	background: var(--itdb-info-color);
-	&:hover,
-	&:focus {
-		background: color-mix(in hsl, var(--itdb-info-color), black 10%);
-	}
-	&:active {
-		background: color-mix(in hsl, var(--itdb-info-color), white 10%);
-	}
+	--itdb-button-color: var(--itdb-info-color);
 }
 
 .itdb-button--action {
-	background: var(--itdb-action-color);
+	--itdb-button-color: var(--itdb-action-color);
+}
+
+.itdb-button--info,
+.itdb-button--action {
+	background: var(--itdb-button-color);
 	&:hover,
 	&:focus {
-		background: color-mix(in hsl, var(--itdb-action-color), black 10%);
+		background: color-mix(in hsl, var(--itdb-button-color), black 10%);
 	}
 	&:active {
-		background: color-mix(in hsl, var(--itdb-action-color), white 10%);
+		background: color-mix(in hsl, var(--itdb-button-color), white 10%);
 	}
 }
 
