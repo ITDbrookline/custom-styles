@@ -1,6 +1,6 @@
 :root {
-	--itdb-info-color: hsl(138, 53%, 25%);
-	--itdb-action-color: hsl(2, 68%, 57%);
+	--itdb-info-color: #3f9dc6;
+	--itdb-action-color: #1e6232;
 
 	--itdb-gold: #f7d72a;
 	--itdb-blue: #4ca8d1;
