@@ -82,10 +82,10 @@ ol ol ol.bullets {
 	background: var(--itdb-info-color);
 	&:hover,
 	&:focus {
-		background: color-mix(in hsl, var(--itdb-main-info-color), black 10%);
+		background: color-mix(in hsl, var(--itdb-info-color), black 10%);
 	}
 	&:active {
-		background: color-mix(in hsl, var(--itdb-main-info-color), white 10%);
+		background: color-mix(in hsl, var(--itdb-info-color), white 10%);
 	}
 }
 
@@ -93,10 +93,10 @@ ol ol ol.bullets {
 	background: var(--itdb-action-color);
 	&:hover,
 	&:focus {
-		background: color-mix(in hsl, var(--itdb-main-action-color), black 10%);
+		background: color-mix(in hsl, var(--itdb-action-color), black 10%);
 	}
 	&:active {
-		background: color-mix(in hsl, var(--itdb-main-action-color), white 10%);
+		background: color-mix(in hsl, var(--itdb-action-color), white 10%);
 	}
 }
 
