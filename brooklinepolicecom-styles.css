@@ -1,10 +1,6 @@
 :root {
-	--itdb-info-color: hsl(224, 59%, 27%);
-	--itdb-info-color-dark: hsl(224, 59%, 22%);
-	--itdb-info-color-light: hsl(224, 59%, 32%);
-	--itdb-action-color: hsl(2, 57%, 39%);
-	--itdb-action-color-dark: hsl(2, 57%, 34%);
-	--itdb-action-color-light: hsl(2, 57%, 44%);
+	--itdb-info-color: #1c326d;
+	--itdb-action-color: #9c2f2b;
 	--itdb-gold: #f6d00a;
 }
 /* Commented out because I don't think it was working on Police Site.
@@ -86,10 +82,10 @@ ol ol ol.bullets {
 	background: var(--itdb-info-color);
 	&:hover,
 	&:focus {
-		background: var(--itdb-info-color-dark);
+		background: color-mix(in hsl, var(--itdb-main-info-color), black 10%);
 	}
 	&:active {
-		background: var(--itdb-info-color-light);
+		background: color-mix(in hsl, var(--itdb-main-info-color), white 10%);
 	}
 }
 
@@ -97,10 +93,10 @@ ol ol ol.bullets {
 	background: var(--itdb-action-color);
 	&:hover,
 	&:focus {
-		background: var(--itdb-action-color-dark);
+		background: color-mix(in hsl, var(--itdb-main-action-color), black 10%);
 	}
 	&:active {
-		background: var(--itdb-action-color-light);
+		background: color-mix(in hsl, var(--itdb-main-action-color), white 10%);
 	}
 }
 
@@ -116,7 +112,7 @@ ol ol ol.bullets {
 	/* the 'popped out' text boxes with grey backgrounds */
 	margin: 0.5em;
 	padding: 0.4em;
-	background-color: rgb(209, 213, 216);
+	background-color: #d1d5d8;
 	border: 1px solid black;
 	border-radius: 15px;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);

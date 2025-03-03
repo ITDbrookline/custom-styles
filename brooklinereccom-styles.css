@@ -1,10 +1,6 @@
 :root {
 	--itdb-info-color: hsl(138, 53%, 25%);
-	--itdb-info-color-dark: hsl(138, 53%, 20%);
-	--itdb-info-color-light: hsl(138, 53%, 30%);
 	--itdb-action-color: hsl(2, 68%, 57%);
-	--itdb-action-color-dark: hsl(2, 68%, 52%);
-	--itdb-action-color-light: hsl(2, 68%, 62%);
 
 	--itdb-gold: #f7d72a;
 	--itdb-blue: #4ca8d1;
@@ -89,10 +85,10 @@ ol ol ol.bullets {
 	background: var(--itdb-info-color);
 	&:hover,
 	&:focus {
-		background: var(--itdb-info-color-dark);
+		background: color-mix(in hsl, var(--itdb-info-color), black 10%);
 	}
 	&:active {
-		background: var(--itdb-info-color-light);
+		background: color-mix(in hsl, var(--itdb-info-color), white 10%);
 	}
 }
 
@@ -100,10 +96,10 @@ ol ol ol.bullets {
 	background: var(--itdb-action-color);
 	&:hover,
 	&:focus {
-		background: var(--itdb-action-color-dark);
+		background: color-mix(in hsl, var(--itdb-action-color), black 10%);
 	}
 	&:active {
-		background: var(--itdb-action-color-light);
+		background: color-mix(in hsl, var(--itdb-action-color), white 10%);
 	}
 }
 
