@@ -45,7 +45,6 @@ ol ol ol.bullets {
 	list-style-type: lower-roman !important;
 }
 
-.colorful-button,
 .itdb-button {
 	display: inline-block;
 	margin: 0.25em auto;
@@ -64,46 +63,45 @@ ol ol ol.bullets {
 	}
 }
 
-.colorful-button--medium,
 .itdb-button--medium {
 	width: 14em;
 	font-size: 22px;
 }
-.colorful-button--small,
+
 .itdb-button--small {
 	width: 12em;
 	font-size: 18px;
 }
 
-.colorful-button--blue,
-.itdb-button--blue,
-.itdb-button--info {
-	--itdb-button-color: var(--itdb-main-info-color);
-}
-
-.colorful-button--red,
 .itdb-button--red,
 .itdb-button--action {
 	--itdb-button-color: var(--itdb-main-action-color);
 }
 
-.colorful-button--green,
+.itdb-button--blue,
+.itdb-button--info {
+	--itdb-button-color: var(--itdb-main-info-color);
+}
+
 .itdb-button--green,
 .itdb-button--dpw-info {
 	--itdb-button-color: var(--itdb-dpw-info-color);
 }
 
-.colorful-button--orange,
 .itdb-button--orange,
 .itdb-button--dpw-action {
 	--itdb-button-color: var(--itdb-dpw-action-color);
 }
 
-.itdb-button--action,
+.itdb-button--blue,
 .itdb-button--info,
-.itdb-button--dpw-action,
-.itdb-button--dpw-info {
-	background: var(--itdb-button-color);
+.itdb-button--red,
+.itdb-button--action,
+.itdb-button--green,
+.itdb-button--dpw-info,
+.itdb-button--orange,
+.itdb-button--dpw-action {
+	background: var(--itdb-button-color); /*Give the button the color declared above, then make it darker or lighter if hovered or activated.*/
 	&:hover,
 	&:focus {
 		background: color-mix(in hsl, var(--itdb-button-color), white 10%);
