@@ -66,7 +66,7 @@ ol ol ol.bullets {
 	text-align: center;
 	text-decoration: none !important;
 	box-shadow: 0px 2px 3px -1px black;
-	transition: all 0.1s linear;
+	transition: all 0.2s linear;
 	&:active {
 		box-shadow: inset 0px 1px 3px -1px black;
 	}
@@ -94,10 +94,10 @@ ol ol ol.bullets {
 	background: var(--itdb-button-color);
 	&:hover,
 	&:focus {
-		background: color-mix(in hsl, var(--itdb-button-color), black 10%);
+		background: color-mix(in hsl, var(--itdb-button-color), white 10%);
 	}
 	&:active {
-		background: color-mix(in hsl, var(--itdb-button-color), white 10%);
+		background: color-mix(in hsl, var(--itdb-button-color), black 5%);
 	}
 }
 
