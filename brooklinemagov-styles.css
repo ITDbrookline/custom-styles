@@ -63,43 +63,35 @@ ol ol ol.bullets {
 	}
 }
 
-.itdb-button--medium {
-	width: 14em;
-	font-size: 22px;
-}
-
 .itdb-button--small {
 	width: 12em;
 	font-size: 18px;
 }
 
-.itdb-button--red,
-.itdb-button--action {
-	--itdb-button-color: var(--itdb-main-action-color);
+.itdb-button--medium {
+	width: 14em;
+	font-size: 22px;
 }
 
-.itdb-button--blue,
 .itdb-button--info {
 	--itdb-button-color: var(--itdb-main-info-color);
 }
 
-.itdb-button--green,
+.itdb-button--action {
+	--itdb-button-color: var(--itdb-main-action-color);
+}
+
 .itdb-button--dpw-info {
 	--itdb-button-color: var(--itdb-dpw-info-color);
 }
 
-.itdb-button--orange,
 .itdb-button--dpw-action {
 	--itdb-button-color: var(--itdb-dpw-action-color);
 }
 
-.itdb-button--blue,
 .itdb-button--info,
-.itdb-button--red,
 .itdb-button--action,
-.itdb-button--green,
 .itdb-button--dpw-info,
-.itdb-button--orange,
 .itdb-button--dpw-action {
 	background: var(--itdb-button-color); /*Give the button the color declared above, then make it darker or lighter if hovered or activated.*/
 	&:hover,
