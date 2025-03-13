@@ -136,6 +136,9 @@ ol ol ol.bullets {
 #___gcse_1 table,
 #___gcse_2 table {
 	background-color: transparent;
+	input {
+		background: none !important;
+	}
 }
 
 .gsst_b {
