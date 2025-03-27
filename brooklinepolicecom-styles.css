@@ -51,7 +51,8 @@ ol ol ol.bullets {
 	list-style-type: lower-roman !important;
 }
 
-.itdb-button {
+.itdb-button--small,
+.itdb-button--medium {
 	display: inline-block;
 	margin: 0.25em auto;
 	padding: 0.25em;
