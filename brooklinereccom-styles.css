@@ -29,7 +29,7 @@ When the user's device has no preference, this script would default to smooth-sc
 ol.accordion {
 	li {
 		border: 2px solid #b8b8b8;
-		border-radius: 5px;
+		border-radius: 4px;
 	}
 	li:not(.active) {
 		a span {
