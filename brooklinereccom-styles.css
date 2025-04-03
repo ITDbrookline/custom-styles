@@ -26,6 +26,18 @@ When the user's device has no preference, this script would default to smooth-sc
 }
 */
 
+ol.accordion {
+	li {
+		border: 2px solid #b8b8b8;
+		border-radius: 5px;
+	}
+	li:not(.active) {
+		a {
+			color: #6b6b6b;
+		}
+	}
+}
+
 /*In bulleted lists, the top level is filled-in circle, then empty circle, then square.
 In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next is i-ii-iii.*/
 
