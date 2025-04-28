@@ -45,7 +45,8 @@ ol ol ol.bullets {
 	list-style-type: lower-roman !important;
 }
 
-.itdb-button {
+.itdb-button--small,
+.itdb-button--medium {
 	display: inline-block;
 	margin: 0.25em auto;
 	padding: 0.25em;
@@ -63,43 +64,35 @@ ol ol ol.bullets {
 	}
 }
 
-.itdb-button--medium {
-	width: 14em;
-	font-size: 22px;
-}
-
 .itdb-button--small {
 	width: 12em;
 	font-size: 18px;
 }
 
-.itdb-button--red,
-.itdb-button--action {
-	--itdb-button-color: var(--itdb-main-action-color);
+.itdb-button--medium {
+	width: 14em;
+	font-size: 22px;
 }
 
-.itdb-button--blue,
 .itdb-button--info {
 	--itdb-button-color: var(--itdb-main-info-color);
 }
 
-.itdb-button--green,
+.itdb-button--action {
+	--itdb-button-color: var(--itdb-main-action-color);
+}
+
 .itdb-button--dpw-info {
 	--itdb-button-color: var(--itdb-dpw-info-color);
 }
 
-.itdb-button--orange,
 .itdb-button--dpw-action {
 	--itdb-button-color: var(--itdb-dpw-action-color);
 }
 
-.itdb-button--blue,
 .itdb-button--info,
-.itdb-button--red,
 .itdb-button--action,
-.itdb-button--green,
 .itdb-button--dpw-info,
-.itdb-button--orange,
 .itdb-button--dpw-action {
 	background: var(
 		--itdb-button-color
@@ -146,6 +139,9 @@ ol ol ol.bullets {
 #___gcse_1 table,
 #___gcse_2 table {
 	background-color: transparent;
+	input {
+		background: none !important;
+	}
 }
 
 .gsst_b {
