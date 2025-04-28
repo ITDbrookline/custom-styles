@@ -1,6 +1,6 @@
 :root {
-	--itdb-main-info-color: #144fa9;
-	--itdb-main-action-color: #b82200;
+	--itdb-main-info-color: #1d3f00;
+	--itdb-main-action-color: #75a201;
 	--itdb-dpw-info-color: #17874d;
 	--itdb-dpw-action-color: #be5513;
 }
@@ -101,7 +101,9 @@ ol ol ol.bullets {
 .itdb-button--dpw-info,
 .itdb-button--orange,
 .itdb-button--dpw-action {
-	background: var(--itdb-button-color); /*Give the button the color declared above, then make it darker or lighter if hovered or activated.*/
+	background: var(
+		--itdb-button-color
+	); /*Give the button the color declared above, then make it darker or lighter if hovered or activated.*/
 	&:hover,
 	&:focus {
 		background: color-mix(in hsl, var(--itdb-button-color), white 10%);
