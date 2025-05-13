@@ -26,6 +26,16 @@ When the user's device has no preference, this script would default to smooth-sc
 }
 */
 
+.topMenuItem:last-child {
+	background-color: var(--itdb-orange);
+	&:hover {
+		background-color: #4195ba;
+	}
+	span {
+		color: #fff;
+	}
+}
+
 ol.accordion {
 	li:not(.active) {
 		border: 2px solid #b8b8b8;

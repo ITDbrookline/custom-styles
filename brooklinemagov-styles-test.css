@@ -1,6 +1,8 @@
 :root {
-	--itdb-main-info-color: #1d3f00;
-	--itdb-main-action-color: #75a201;
+	--itdb-main-dark-green: #1d3f00;
+	--itdb-main-light-green: #75a201;
+	--itdb-main-info-color: var(--itdb-main-dark-green);
+	--itdb-main-action-color: var(--itdb-main-light-green);
 	--itdb-dpw-info-color: #17874d;
 	--itdb-dpw-action-color: #be5513;
 }
@@ -16,6 +18,60 @@
 		scroll-behavior: smooth;
 	} /*When the user's device has no preference, default to smooth-scrolling*/
 }
+
+.itdb-top-task-buttons {
+	display: flex; /*TODO: grid?*/
+	flex-flow: row wrap;
+	a {
+		display: flex;
+		justify-content: flex-start;
+		flex-flow: row nowrap;
+		align-items: center;
+
+		box-sizing: border-box;
+		margin: 0 auto;
+		padding: 0.75rem 0.25rem;
+		min-width: 14rem;
+		max-width: 19rem;
+		height: 6.875rem;
+
+		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+		transition: all 0.2s ease-in-out;
+		border: 3px solid;
+		border-radius: 0.625rem;
+		border-color: var(--itdb-main-dark-green);
+		text-decoration: none;
+
+		color: #fff;
+		background-color: var(--itdb-main-dark-green);
+
+		&:hover {
+			color: var(--itdb-main-dark-green);
+			background-color: #fff;
+		}
+		span {
+			text-align: left;
+			font: bold 1.5rem 'Montserrat', sans-serif; /*TODO Change to Poppins or Roboto?*/
+			line-height: 1.2;
+			overflow-wrap: break-word;
+		}
+		i {
+			flex-shrink: 0;
+			margin-right: 0.4rem;
+			font-size: 5rem;
+		}
+	}
+}
+
+/*.icon {
+  position: absolute;
+  z-index: 90;
+  width: 1.2em;
+  margin-left: 1.25em;
+  margin-top: 1.25em;
+  font-size: 2em;
+  line-height: 2em;
+} */
 
 /*In bulleted lists, the top level is filled-in circle, then empty circle, then square.
 In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next is i-ii-iii.*/
