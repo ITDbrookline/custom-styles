@@ -36,13 +36,11 @@ When the user's device has no preference, this script would default to smooth-sc
 	}
 }
 
-ol.accordion {
-	li:not(.active) {
-		border: 2px solid #b8b8b8;
-		border-radius: 4px;
-		a span {
-			color: #6b6b6b;
-		}
+ol.cpTabs > li:not(.active) > a {
+	border: 2px solid #b8b8b8;
+	border-radius: 4px;
+	> span {
+		color: #6b6b6b;
 	}
 }
 
