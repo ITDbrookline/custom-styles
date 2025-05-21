@@ -26,7 +26,8 @@ When the user's device has no preference, this script would default to smooth-sc
 }
 */
 
-.topMenuItem:last-child {
+/* Make rightmost global nav item orange */
+.mainNav .topMenuItem:last-child {
 	background-color: var(--itdb-orange);
 	&:hover {
 		background-color: #4195ba;
@@ -36,6 +37,7 @@ When the user's device has no preference, this script would default to smooth-sc
 	}
 }
 
+/* Adding borders and darker text to tabbed widget tabs, to make them easier to read */
 ol.cpTabs > li:not(.active) > a {
 	border: 2px solid #b8b8b8;
 	border-radius: 4px;
