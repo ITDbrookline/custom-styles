@@ -1,8 +1,8 @@
 :root {
 	--itdb-main-dark-green: #1d3f00;
 	--itdb-main-light-green: #75a201;
-	--itdb-main-info-color: var(--itdb-main-dark-green);
-	--itdb-main-action-color: var(--itdb-main-light-green);
+	--itdb-main-info-color: var(--itdb-main-light-green);
+	--itdb-main-action-color: var(--itdb-main-dark-green);
 	--itdb-dpw-info-color: #17874d;
 	--itdb-dpw-action-color: #be5513;
 }
@@ -120,7 +120,7 @@ div.editor ol ol ol,
 	/* the 'popped out' text boxes with grey backgrounds */
 	margin: 0.5em;
 	padding: 0.4em;
-	background-color: rgb(209, 213, 216);
+	background-color: #e4e7e7;
 	border: 1px solid black;
 	border-radius: 15px;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);

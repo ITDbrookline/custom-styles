@@ -1,8 +1,8 @@
 :root {
 	--itdb-main-dark-green: #1d3f00;
 	--itdb-main-light-green: #75a201;
-	--itdb-main-info-color: var(--itdb-main-dark-green);
-	--itdb-main-action-color: var(--itdb-main-light-green);
+	--itdb-main-info-color: var(--itdb-main-light-green);
+	--itdb-main-action-color: var(--itdb-main-dark-green);
 	--itdb-dpw-info-color: #17874d;
 	--itdb-dpw-action-color: #be5513;
 }
@@ -22,14 +22,19 @@
 .itdb-top-task-buttons {
 	display: flex; /*TODO: grid?*/
 	flex-flow: row wrap;
+	justify-content: space-evenly;
+	gap: 1rem;
 	a {
+		/*flex properties as items in the top task buttons container*/
+		flex: 1 1 0;
+
+		/* flex properties as a container for text and icon */
 		display: flex;
 		justify-content: flex-start;
 		flex-flow: row nowrap;
 		align-items: center;
 
 		box-sizing: border-box;
-		margin: 0 auto;
 		padding: 0.75rem 0.25rem;
 		min-width: 14rem;
 		max-width: 19rem;
@@ -58,7 +63,7 @@
 		i {
 			flex-shrink: 0;
 			margin-right: 0.4rem;
-			font-size: 5rem;
+			font-size: 4rem;
 		}
 	}
 }
