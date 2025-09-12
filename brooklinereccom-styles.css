@@ -168,3 +168,9 @@ ol ol ol.bullets {
 	/*I don't know why, but both of these are necessary to do so*/
 	line-height: 24px;
 }
+
+.clerk-listing-MuiIconButton-colorPrimary svg {
+	/* Makes video/download icons more visible in CivicClerk embedded widgets */
+	stroke: #111;
+	color: #1d3f00 !important;
+}
