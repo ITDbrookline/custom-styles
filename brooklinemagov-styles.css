@@ -22,27 +22,27 @@
 /*In bulleted lists, the top level is filled-in circle, then empty circle, then square.
 In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next is i-ii-iii.*/
 
-.fr-view ul:not(footer ul),
+div.editor ul,
 .bullets ul,
 ol.bullets {
 	list-style-type: disc !important;
 }
-.fr-view ul ul:not(footer ul),
+div.editor ul ul,
 .bullets ul ul,
 ol ol.bullets {
 	list-style-type: circle !important;
 }
-.fr-view ul ul ul:not(footer ul),
+div.editor ul ul ul,
 .bullets ul ul ul,
 ol ol ol.bullets {
 	list-style-type: square !important;
 }
 
-.fr-view ol ol:not(footer ol),
+div.editor ol ol,
 .bullets ol ol {
 	list-style-type: lower-alpha !important;
 }
-.fr-view ol ol ol:not(footer ol),
+div.editor ol ol ol,
 .bullets ol ol ol {
 	list-style-type: lower-roman !important;
 }
@@ -119,7 +119,7 @@ ol ol ol.bullets {
 .itdb-highlight-box {
 	/* the 'popped out' text boxes with grey backgrounds */
 	margin: 0.5em;
-	padding: 0.4em;
+	padding: 1em;
 	background-color: #e4e7e7;
 	border: 1px solid black;
 	border-radius: 15px;
