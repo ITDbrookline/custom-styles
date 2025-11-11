@@ -1,6 +1,7 @@
 :root {
 	--itdb-main-dark-green: #1d3f00;
 	--itdb-main-light-green: #75a201;
+	--itdb-main-tan-green: #c6dbc3;
 	--itdb-main-info-color: var(--itdb-main-light-green);
 	--itdb-main-action-color: var(--itdb-main-dark-green);
 	--itdb-dpw-info-color: #17874d;
@@ -110,10 +111,27 @@ div.editor ol ol ol,
 
 .itdb-civicclerk-calendar,
 .itdb-board-membership {
+	/* Embedded CivicClerk calendars */
 	border: 1px solid #575757;
 	border-radius: 15px;
 	overflow: hidden;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+	a#login {
+		/* Subscriptions button */
+		background-color: var(--itdb-main-tan-green) !important;
+		&:hover,
+		&:focus {
+			background-color: color-mix(in hsl, var(--itdb-main-tan-green), white 10%) !important;
+		}
+		&:active {
+			background-color: color-mix(in hsl, var(--itdb-main-tan-green), black 2%) !important;
+		}
+	}
+	.clerk-listing-MuiIconButton-colorPrimary svg {
+		/* Video/download icons*/
+		stroke: #111;
+		color: #1d3f00 !important;
+	}
 }
 
 .itdb-highlight-box {
@@ -154,10 +172,4 @@ div.editor ol ol ol,
 	/*ALSO helps to shrink the "X" button that appears when you type in text.*/
 	/*I don't know why, but both of these are necessary to do so*/
 	line-height: 24px;
-}
-
-.clerk-listing-MuiIconButton-colorPrimary svg {
-	/* Makes video/download icons more visible in CivicClerk embedded widgets */
-	stroke: #111;
-	color: #1d3f00 !important;
 }
