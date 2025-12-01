@@ -134,6 +134,11 @@ div.editor ol ol ol,
 	}
 }
 
+.itdb-board-membership {
+	width: 100%;
+	aspect-ratio: 8/5;
+}
+
 .itdb-highlight-box {
 	/* the 'popped out' text boxes with grey backgrounds */
 	margin: 0.5em;
