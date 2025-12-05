@@ -113,6 +113,11 @@ div.editor ol ol ol,
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
+.itdb-board-membership {
+	width: 100%;
+	aspect-ratio: 8/5;
+}
+
 .itdb-highlight-box {
 	/* the 'popped out' text boxes with grey backgrounds */
 	margin: 0.5em;
@@ -150,4 +155,10 @@ div.editor ol ol ol,
 	/*ALSO helps to shrink the "X" button that appears when you type in text.*/
 	/*I don't know why, but both of these are necessary to do so*/
 	line-height: 24px;
+}
+
+.clerk-listing-MuiIconButton-colorPrimary svg {
+	/* Makes video/download icons more visible in CivicClerk embedded widgets */
+	stroke: #111;
+	color: #1d3f00 !important;
 }
