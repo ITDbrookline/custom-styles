@@ -110,7 +110,8 @@ div.editor ol ol ol,
 }
 
 .itdb-civicclerk-calendar,
-.itdb-board-membership {
+.itdb-board-membership,
+.itdb-iframe {
 	/* Embedded CivicClerk calendars */
 	border: 1px solid #575757;
 	border-radius: 15px;
