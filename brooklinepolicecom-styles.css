@@ -130,6 +130,13 @@ div.editor ol ol ol,
 	overflow: hidden;
 }
 
+@media (min-width: 1250px) {
+	/* moves the homepage captions down a hair */
+	.widget.skin71 .itemCaption.overlay {
+		bottom: 20% !important;
+	}
+}
+
 .gsc-control-cse {
 	/*rounds the borders on Google Search Results*/
 	border-radius: 16px;
