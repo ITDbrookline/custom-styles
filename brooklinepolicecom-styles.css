@@ -135,6 +135,12 @@ div.editor ol ol ol,
 	.widget.skin71 .itemCaption.overlay {
 		bottom: 20% !important;
 	}
+	.widget.skin71 .overlayInner::after {
+		padding: 1em 0;
+	}
+	.widget.skin71 .widgetItem {
+		font-size: 1.4em;
+	}
 }
 
 .gsc-control-cse {
