@@ -27,7 +27,12 @@
 	position: absolute;
 	inset: 0;
 	pointer-events: none;
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%);
+	background: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0) 60%,
+		rgba(255, 255, 255, 0.9) 90%,
+		rgba(255, 255, 255, 1) 100%
+	);
 }
 
 /*In bulleted lists, the top level is filled-in circle, then empty circle, then square.
