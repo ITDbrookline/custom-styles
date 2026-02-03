@@ -131,7 +131,7 @@ div.editor ol ol ol,
 }
 
 @media (min-width: 1250px) {
-	/* moves the homepage captions down a hair */
+	/* Adjusts look of the homepage banner captions */
 	.widget.skin71 .itemCaption.overlay {
 		bottom: 20% !important;
 	}
