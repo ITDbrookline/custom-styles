@@ -23,6 +23,15 @@ When the user's device has no preference, this script would default to smooth-sc
 }
 */
 
+@media (min-width: 1200px) {
+	#searchTS {
+		margin-top: 0px;
+	}
+	#bannerLogo2TS {
+		margin-top: 25px;
+	}
+}
+
 /* Adding borders and darker text to tabbed widget tabs, to make them easier to read */
 ol.cpTabs > li:not(.active) > a {
 	border: 2px solid #b8b8b8;
