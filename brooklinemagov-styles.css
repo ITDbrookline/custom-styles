@@ -20,9 +20,23 @@
 	} /*When the user's device has no preference, default to smooth-scrolling*/
 }
 
+/* Make the image banner bottoms fade to white on Interior and Simple pages. Doesn't work on homepage because the image is cut off on bottom.*/
+
+#bannerDivbanner1::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0) 60%,
+		rgba(255, 255, 255, 0.9) 90%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}
+
 /*In bulleted lists, the top level is filled-in circle, then empty circle, then square.
 In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next is i-ii-iii.*/
-
 div.editor ul,
 .bullets ul,
 ol.bullets {
@@ -42,10 +56,9 @@ ol ol ol.bullets {
 div.editor ol ol,
 .bullets ol ol {
 	list-style-type: lower-alpha !important;
-}
-div.editor ol ol ol,
-.bullets ol ol ol {
-	list-style-type: lower-roman !important;
+	ol {
+		list-style-type: lower-roman !important;
+	}
 }
 
 .itdb-button--small,
