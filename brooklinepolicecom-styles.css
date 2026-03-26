@@ -63,6 +63,9 @@ div.editor ol ol,
 		list-style-type: lower-roman !important;
 	}
 }
+div.editor dt {
+	font-weight: bold;
+}
 
 .itdb-button--small,
 .itdb-button--medium {
