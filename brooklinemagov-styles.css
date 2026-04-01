@@ -22,6 +22,10 @@
 
 /* Make the image banner bottoms fade to white on Interior and Simple pages. Doesn't work on homepage because the image is cut off on bottom.*/
 
+#bannerDivbanner1 {
+	position: relative;
+}
+
 #bannerDivbanner1::after {
 	content: '';
 	position: absolute;

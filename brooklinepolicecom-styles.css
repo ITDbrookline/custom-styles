@@ -23,6 +23,12 @@ When the user's device has no preference, this script would default to smooth-sc
 }
 */
 
+#bannerContainerTS img {
+	display: block;
+	-webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 100%);
+	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 100%);
+}
+
 @media (min-width: 1200px) {
 	#searchTS {
 		margin-top: 0px;
