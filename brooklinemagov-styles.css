@@ -2,6 +2,7 @@
 	--itdb-main-dark-green: #1d3f00;
 	--itdb-main-light-green: #75a201;
 	--itdb-main-tan-green: #c6dbc3;
+	--itdb-main-charcoal: #1d1d1b;
 	--itdb-main-info-color: var(--itdb-main-light-green);
 	--itdb-main-action-color: var(--itdb-main-dark-green);
 	--itdb-dpw-info-color: #17874d;
@@ -190,6 +191,8 @@ div.editor dl {
 	overflow: hidden;
 }
 
+/* Google Search Bar Stylings */
+
 .gsc-control-cse {
 	/*rounds the borders on Google Search Results*/
 	border-radius: 16px;
@@ -214,4 +217,51 @@ div.editor dl {
 	/*ALSO helps to shrink the "X" button that appears when you type in text.*/
 	/*I don't know why, but both of these are necessary to do so*/
 	line-height: 24px;
+}
+
+/* SEARCH BAR STYLINGS */
+.itdb-search--form {
+	--itdb-height: 3rem;
+	--itdb-box-shadow-1: 0 10px 10px -10px rgba(0, 0, 0, 0.25), inset -3.4rem 0 2px -2px var(--itdb-main-light-green);
+
+	width: 20rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	gap: 0;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: var(--itdb-box-shadow-1);
+	-moz-box-shadow: var(--itdb-box-shadow-1);
+	-webkit-box-shadow: var(--itdb-box-shadow-1);
+	transition: 0.2s linear;
+
+	label {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+	input {
+		border-radius: inherit;
+		padding: 0.25rem 1rem;
+		background: none;
+		font-size: 1.2rem;
+		border: none;
+		height: var(--itdb-height);
+	}
+	button {
+		position: relative;
+		top: 2px;
+		cursor: pointer;
+		height: var(--itdb-height);
+		width: var(--itdb-height);
+		background: none;
+		border: none;
+		border-radius: inherit;
+	}
 }
