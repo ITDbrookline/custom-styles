@@ -238,7 +238,7 @@ form.itdb-search--form {
 
 	label {
 		border: 0;
-		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
 		height: 1px;
 		margin: -1px;
 		overflow: hidden;
@@ -270,5 +270,10 @@ form.itdb-search--form {
 		-webkit-box-shadow: var(--itdb-searchbox-shadow);
 		border: none;
 		border-radius: inherit;
+	}
+	input:focus,
+	button:focus {
+		outline: 2px solid blue; /* or your brand color */
+		outline-offset: 2px;
 	}
 }
