@@ -168,6 +168,12 @@ div.editor dl {
 			background-color: color-mix(in hsl, var(--itdb-main-tan-green), black 2%) !important;
 		}
 	}
+
+	div#clerk-embed-simple {
+		/* For the 'simple' embed on brooklinema.gov/agendas, elongate it so we can see more meetings at once */
+		height: 2000px !important;
+		max-height: none !important;
+	}
 	.clerk-listing-MuiIconButton-colorPrimary svg {
 		/* Video/download icons*/
 		stroke: #111;
