@@ -213,3 +213,11 @@ div.editor dl {
 	/* This eliminates the extra space that's meant to be left for the homepage banners, which we've eliminated. */
 	padding-top: 1.5em;
 }
+
+.widgetViewAll:hover,
+.widgetViewAll:focus,
+.widgetViewAll:active {
+	text-decoration: underline !important;
+	transform: scale(1.1);
+	transition: 0.1s linear;
+}
