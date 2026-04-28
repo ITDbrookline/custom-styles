@@ -214,10 +214,17 @@ div.editor dl {
 	padding-top: 1.5em;
 }
 
-.widgetViewAll:hover,
-.widgetViewAll:focus,
-.widgetViewAll:active {
-	text-decoration: underline !important;
-	transform: scale(1.1);
-	transition: 0.1s linear;
+.InfoAdvanced a.readOn,
+.widgetViewAll {
+	/* additional styling to make it obvious when focus is on footer "staff directory" and other "read on"-style buttons */
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: underline !important;
+		transform: scale(1.1);
+		transition: 0.1s linear;
+	}
+	&:focus {
+		outline: 3px solid var(--itdb-info-color);
+	}
 }
