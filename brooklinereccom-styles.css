@@ -229,3 +229,8 @@ div.editor dl {
 		outline: 3px solid var(--itdb-info-color);
 	}
 }
+
+.siteFooter .widget.skin62 a {
+	/* additional contrast on the quicklinks in the footer */
+	color: #454545;
+}
