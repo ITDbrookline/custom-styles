@@ -55,15 +55,15 @@ div.editor dl {
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none !important;
-	box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.7);
 
 	transition: all 0.2s linear;
 	&:active {
-		box-shadow: inset 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
-		-moz-box-shadow: inset 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
-		-webkit-box-shadow: inset 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
+		box-shadow: inset 0 1px 3px -1px rgba(0, 0, 0, 0.7);
+		-moz-box-shadow: inset 0 1px 3px -1px rgba(0, 0, 0, 0.7);
+		-webkit-box-shadow: inset 0 1px 3px -1px rgba(0, 0, 0, 0.7);
 	}
 }
 
@@ -78,7 +78,9 @@ div.editor dl {
 }
 
 .itdb-button--info,
-.itdb-button--action {
+.itdb-button--action,
+.itdb-button--dpw-info,
+.itdb-button--dpw-action {
 	background: var(--itdb-button-color);
 	&:hover,
 	&:focus {
