@@ -1,0 +1,129 @@
+/*In bulleted lists, the top level is filled-in circle, then empty circle, then square.
+In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next is i-ii-iii.*/
+div.editor ul,
+.bullets ul,
+ol.bullets {
+	list-style-type: disc !important;
+}
+div.editor ul ul,
+.bullets ul ul,
+ol ol.bullets {
+	list-style-type: circle !important;
+}
+div.editor ul ul ul,
+.bullets ul ul ul,
+ol ol ol.bullets {
+	list-style-type: square !important;
+}
+
+div.editor ol ol,
+.bullets ol ol {
+	list-style-type: lower-alpha !important;
+	ol {
+		list-style-type: lower-roman !important;
+	}
+}
+/* descriptive lists */
+div.editor dl {
+	padding-left: 1em;
+	dt {
+		font-weight: bold;
+	}
+}
+
+.itdb-button--small,
+.itdb-button--medium {
+	display: inline-block;
+	margin: 0.25em auto;
+	padding: 0.25em;
+	border-radius: 11px;
+	max-width: 100%;
+	color: #fff !important;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none !important;
+	box-shadow: 0px 2px 3px -1px black;
+	transition: all 0.2s linear;
+	&:active {
+		box-shadow: inset 0px 1px 3px -1px black;
+	}
+}
+
+/* Colorful button styles */
+.itdb-button--medium {
+	width: 14em;
+	font-size: 22px;
+}
+.itdb-button--small {
+	width: 12em;
+	font-size: 18px;
+}
+
+.itdb-button--info {
+	--itdb-button-color: var(--itdb-info-color);
+}
+
+.itdb-button--action {
+	--itdb-button-color: var(--itdb-action-color);
+}
+
+.itdb-button--info,
+.itdb-button--action {
+	background: var(--itdb-button-color);
+	&:hover,
+	&:focus {
+		background: color-mix(in hsl, var(--itdb-button-color), white 10%);
+	}
+	&:active {
+		background: color-mix(in hsl, var(--itdb-button-color), black 5%);
+	}
+}
+
+.itdb-civicclerk-calendar,
+.itdb-board-membership,
+.itdb-iframe {
+	/* Embedded CivicClerk calendars */
+	border: 1px solid #575757;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+	a#login {
+		/* Subscriptions button */
+		background-color: var(--itdb-main-tan-green) !important;
+		&:hover,
+		&:focus {
+			background-color: color-mix(in hsl, var(--itdb-main-tan-green), white 10%) !important;
+		}
+		&:active {
+			background-color: color-mix(in hsl, var(--itdb-main-tan-green), black 2%) !important;
+		}
+	}
+
+	div#clerk-embed-simple {
+		/* For the 'simple' embed on brooklinema.gov/agendas, elongate it so we can see more meetings at once */
+		height: 2000px !important;
+		max-height: none !important;
+	}
+	.clerk-listing-MuiIconButton-colorPrimary svg {
+		/* Video/download icons*/
+		stroke: #111;
+		color: #1d3f00 !important;
+	}
+}
+
+.itdb-board-membership {
+	width: 100%;
+	aspect-ratio: 8/5;
+}
+
+.itdb-highlight-box {
+	/* the 'popped out' text boxes with grey backgrounds */
+	margin: 0.5em;
+	padding: 1em;
+	background-color: #e4e7e7;
+	border: 1px solid black;
+	border-radius: 15px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}

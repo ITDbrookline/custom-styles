@@ -1,0 +1,58 @@
+/* SEARCH BAR STYLINGS */
+form.itdb-search--form {
+	--itdb-height: 3rem;
+	--itdb-box-shadow-1: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+	background: white;
+	width: 20rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: stretch;
+	align-items: center;
+	gap: 0;
+	border-radius: 10px;
+	box-shadow: var(--itdb-box-shadow-1);
+	-moz-box-shadow: var(--itdb-box-shadow-1);
+	-webkit-box-shadow: var(--itdb-box-shadow-1);
+	transition: 0.2s linear;
+
+	label {
+		border: 0;
+		clip-path: inset(50%);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+	input {
+		background: none;
+		border-radius: inherit;
+		padding: 0.25rem 1rem;
+		font-size: 1.2rem;
+		border: none;
+		height: var(--itdb-height);
+	}
+	button {
+		--itdb-searchbox_button--shadow: inset 0 0 1px 1px grey;
+		margin: 0.5rem 0.5rem 0.5rem 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+		height: var(--itdb-height);
+		width: var(--itdb-height);
+		background: var(--itdb-searchbox_button--color);
+		box-shadow: var(--itdb-searchbox-shadow);
+		-moz-box-shadow: var(--itdb-searchbox-shadow);
+		-webkit-box-shadow: var(--itdb-searchbox-shadow);
+		border: none;
+		border-radius: inherit;
+	}
+	input:focus,
+	button:focus {
+		outline: 2px solid blue; /* or your brand color */
+		outline-offset: 2px;
+	}
+}

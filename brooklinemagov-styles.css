@@ -7,6 +7,7 @@
 	--itdb-main-action-color: var(--itdb-main-dark-green);
 	--itdb-dpw-info-color: #17874d;
 	--itdb-dpw-action-color: #be5513;
+	--itdb-searchbox_button--color: var(--itdb-main-light-green);
 }
 
 *,
@@ -195,91 +196,4 @@ div.editor dl {
 	border-radius: 15px;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
-}
-
-/* Google Search Bar Stylings */
-
-.gsc-control-cse {
-	/*rounds the borders on Google Search Results*/
-	border-radius: 16px;
-	overflow: hidden;
-}
-.gsc-input-box {
-	/*rounds the corners on Google Search Bar*/
-	border-radius: 8px;
-	overflow: hidden;
-}
-#___gcse_0 table,
-#___gcse_1 table,
-#___gcse_2 table {
-	background-color: transparent;
-}
-
-.gsst_b {
-	/*helps to shrink the "X" button that appears when you type in text.*/
-	font-size: 0px;
-}
-.gscb_a {
-	/*ALSO helps to shrink the "X" button that appears when you type in text.*/
-	/*I don't know why, but both of these are necessary to do so*/
-	line-height: 24px;
-}
-
-/* SEARCH BAR STYLINGS */
-form.itdb-search--form {
-	--itdb-height: 3rem;
-	--itdb-box-shadow-1: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
-	background: white;
-	width: 20rem;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: stretch;
-	align-items: center;
-	gap: 0;
-	border-radius: 10px;
-	box-shadow: var(--itdb-box-shadow-1);
-	-moz-box-shadow: var(--itdb-box-shadow-1);
-	-webkit-box-shadow: var(--itdb-box-shadow-1);
-	transition: 0.2s linear;
-
-	label {
-		border: 0;
-		clip-path: inset(50%);
-		height: 1px;
-		margin: -1px;
-		overflow: hidden;
-		padding: 0;
-		position: absolute;
-		width: 1px;
-	}
-	input {
-		background: none;
-		border-radius: inherit;
-		padding: 0.25rem 1rem;
-		font-size: 1.2rem;
-		border: none;
-		height: var(--itdb-height);
-	}
-	button {
-		--itdb-searchbox_button--shadow: inset 0 0 1px 1px grey;
-		margin: 0.5rem 0.5rem 0.5rem 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		cursor: pointer;
-		height: var(--itdb-height);
-		width: var(--itdb-height);
-		background: var(--itdb-main-light-green);
-		box-shadow: var(--itdb-searchbox-shadow);
-		-moz-box-shadow: var(--itdb-searchbox-shadow);
-		-webkit-box-shadow: var(--itdb-searchbox-shadow);
-		border: none;
-		border-radius: inherit;
-	}
-	input:focus,
-	button:focus {
-		outline: 2px solid blue; /* or your brand color */
-		outline-offset: 2px;
-	}
 }
