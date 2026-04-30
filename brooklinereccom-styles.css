@@ -37,11 +37,12 @@ When the user's device has no preference, this script would default to smooth-sc
 /* Make rightmost global nav item orange */
 .mainNav .topMenuItem:last-child {
 	background-color: var(--itdb-orange);
+	border-radius: 25px;
 	&:hover {
-		background-color: #4195ba;
+		background-color: var(--itdb-blue);
 	}
 	span {
-		color: #fff;
+		color: #363636;
 	}
 }
 
