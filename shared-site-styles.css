@@ -43,10 +43,15 @@ div.editor dl {
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none !important;
-	box-shadow: 0px 2px 3px -1px black;
+	box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+
 	transition: all 0.2s linear;
 	&:active {
-		box-shadow: inset 0px 1px 3px -1px black;
+		box-shadow: inset 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: inset 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: inset 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
 	}
 }
 
@@ -80,6 +85,9 @@ div.editor dl {
 	border-radius: 15px;
 	overflow: hidden;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+
 	a#login {
 		/* Subscriptions button */
 		background-color: var(--itdb-main-tan-green) !important;
@@ -117,5 +125,7 @@ div.editor dl {
 	border: 1px solid black;
 	border-radius: 15px;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 }
