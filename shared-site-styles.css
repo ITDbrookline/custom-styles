@@ -60,14 +60,6 @@ div.editor dl {
 	font-size: 18px;
 }
 
-.itdb-button--info {
-	--itdb-button-color: var(--itdb-info-color);
-}
-
-.itdb-button--action {
-	--itdb-button-color: var(--itdb-action-color);
-}
-
 .itdb-button--info,
 .itdb-button--action {
 	background: var(--itdb-button-color);
