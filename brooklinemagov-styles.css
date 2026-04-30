@@ -41,32 +41,22 @@
 	);
 }
 
-h5,
-h6 {
-	font-size: 0.95em;
-	font-style: italic;
-}
 h5 {
-	padding-left: 1em;
 	color: var(--itdb-main-light-green);
 }
 h6 {
-	padding-left: 3em;
 	color: #757452;
 }
 
 .itdb-button--info {
 	--itdb-button-color: var(--itdb-main-info-color);
 }
-
 .itdb-button--action {
 	--itdb-button-color: var(--itdb-main-action-color);
 }
-
 .itdb-button--dpw-info {
 	--itdb-button-color: var(--itdb-dpw-info-color);
 }
-
 .itdb-button--dpw-action {
 	--itdb-button-color: var(--itdb-dpw-action-color);
 }
