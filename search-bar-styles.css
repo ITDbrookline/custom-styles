@@ -34,7 +34,7 @@ form.itdb-search--form {
 		height: var(--itdb-height);
 	}
 	button {
-		--itdb-searchbox_button--shadow: inset 0 0 1px 1px grey;
+		--itdb-searchBar_button--shadow: inset 0 0 1px 1px grey;
 		margin: 0.5rem 0.5rem 0.5rem 0;
 		display: flex;
 		justify-content: center;
@@ -43,10 +43,10 @@ form.itdb-search--form {
 		cursor: pointer;
 		height: var(--itdb-height);
 		width: var(--itdb-height);
-		background: var(--itdb-searchbox_button--color);
-		box-shadow: var(--itdb-searchbox-shadow);
-		-moz-box-shadow: var(--itdb-searchbox-shadow);
-		-webkit-box-shadow: var(--itdb-searchbox-shadow);
+		background: var(--itdb-searchBar_button--color);
+		box-shadow: var(--itdb-searchBar-shadow);
+		-moz-box-shadow: var(--itdb-searchBar-shadow);
+		-webkit-box-shadow: var(--itdb-searchBar-shadow);
 		border: none;
 		border-radius: inherit;
 	}
