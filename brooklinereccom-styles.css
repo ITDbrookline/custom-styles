@@ -221,6 +221,7 @@ div.editor dl {
 	&:hover,
 	&:focus,
 	&:active {
+		color: white !important;
 		text-decoration: underline !important;
 		transform: scale(1.1);
 		transition: 0.1s linear;
@@ -230,7 +231,13 @@ div.editor dl {
 	}
 }
 
+.siteFooter .widget.skin70 a,
 .siteFooter .widget.skin62 a {
 	/* additional contrast on the quicklinks in the footer */
 	color: #454545;
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--itdb-red);
+	}
 }
