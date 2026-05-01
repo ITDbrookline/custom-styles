@@ -35,11 +35,14 @@ div.editor ol ol,
 		list-style-type: lower-roman !important;
 	}
 }
-/* descriptive lists */
 div.editor dl {
 	padding-left: 1em;
 	dt {
 		font-weight: bold;
+	}
+	dt + dd {
+		/* 	extra space between items */
+		margin-bottom: 1.5em;
 	}
 }
 
@@ -137,7 +140,7 @@ div.editor dl {
 .itdb-youtube {
 	width: 560px;
 	max-width: 100%;
-    aspect-ratio: 16/9;
+	aspect-ratio: 16/9;
 }
 
 .itdb-highlight-box {
