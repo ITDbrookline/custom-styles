@@ -138,6 +138,8 @@ div.editor dl {
 }
 
 .itdb-youtube {
+	display: block;
+	margin: 0 auto;
 	width: 560px;
 	max-width: 100%;
 	aspect-ratio: 16/9;
