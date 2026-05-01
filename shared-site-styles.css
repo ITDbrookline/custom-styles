@@ -86,6 +86,9 @@ div.editor dl {
 	&:focus {
 		background: color-mix(in hsl, var(--itdb-button-color), white 10%);
 	}
+	&:focus:not(:active) {
+		outline: 3px solid black;
+	}
 	&:active {
 		background: color-mix(in hsl, var(--itdb-button-color), black 5%);
 	}

@@ -55,80 +55,11 @@ ol.cpTabs > li:not(.active) > a {
 	}
 }
 
-h5,
-h6 {
-	font-size: 0.95em;
-	font-style: italic;
-}
 h5 {
-	padding-left: 1em;
 	color: var(--itdb-info-color);
 }
 h6 {
-	padding-left: 3em;
 	color: #757452;
-}
-
-/*In bulleted lists, the top level is filled-in circle, then empty circle, then square.
-In numbered lists, the top level of lists is 1-2-3, the next is a-b-c, the next is i-ii-iii.*/
-div.editor ul,
-.bullets ul,
-ol.bullets {
-	list-style-type: disc !important;
-}
-div.editor ul ul,
-.bullets ul ul,
-ol ol.bullets {
-	list-style-type: circle !important;
-}
-div.editor ul ul ul,
-.bullets ul ul ul,
-ol ol ol.bullets {
-	list-style-type: square !important;
-}
-
-div.editor ol ol,
-.bullets ol ol {
-	list-style-type: lower-alpha !important;
-	ol {
-		list-style-type: lower-roman !important;
-	}
-}
-
-/* descriptive lists */
-div.editor dl {
-	padding-left: 1em;
-	dt {
-		font-weight: bold;
-	}
-}
-
-.itdb-button--small,
-.itdb-button--medium {
-	display: inline-block;
-	margin: 0.25em auto;
-	padding: 0.25em;
-	border-radius: 11px;
-	max-width: 100%;
-	color: #fff !important;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none !important;
-	box-shadow: 0px 2px 3px -1px black;
-	transition: all 0.2s linear;
-	&:active {
-		box-shadow: inset 0px 1px 3px -1px black;
-	}
-}
-
-.itdb-button--medium {
-	width: 14em;
-	font-size: 22px;
-}
-.itdb-button--small {
-	width: 12em;
-	font-size: 18px;
 }
 
 .itdb-button--info {
@@ -139,49 +70,39 @@ div.editor dl {
 	--itdb-button-color: var(--itdb-action-color);
 }
 
-.itdb-button--info,
-.itdb-button--action {
-	background: var(--itdb-button-color);
+#structuralContainer13 {
+	/* This eliminates the extra space that's meant to be left for the homepage banners, which we've eliminated. */
+	padding-top: 1.5em;
+}
+
+.InfoAdvanced a.readOn,
+.widgetViewAll {
+	/* makes it obvious when focus is on footer "staff directory" and other "read on"-style buttons */
 	&:hover,
-	&:focus {
-		background: color-mix(in hsl, var(--itdb-button-color), white 10%);
-	}
+	&:focus,
 	&:active {
-		background: color-mix(in hsl, var(--itdb-button-color), black 5%);
+		color: white !important;
+		text-decoration: underline !important;
+		transform: scale(1.1);
+		transition: 0.1s linear;
+	}
+	&:focus {
+		outline: 3px solid var(--itdb-info-color);
 	}
 }
 
-.clerk-listing-MuiIconButton-colorPrimary svg {
-	/* Makes video/download icons more visible in CivicClerk embedded widgets */
-	stroke: #111;
-	color: #1d3f00 !important;
+.siteFooter .widget.skin70 a,
+.siteFooter .widget.skin62 a {
+	/* additional contrast on the quicklinks in the footer */
+	color: #454545;
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--itdb-red);
+	}
 }
 
-.itdb-civicclerk-calendar,
-.itdb-board-membership,
-.itdb-iframe {
-	border: 1px solid #575757;
-	border-radius: 15px;
-	overflow: hidden;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-.itdb-board-membership {
-	width: 100%;
-	aspect-ratio: 8/5;
-}
-
-.itdb-highlight-box {
-	/* the 'popped out' text boxes with grey backgrounds */
-	margin: 0.5em;
-	padding: 0.4em;
-	background-color: rgb(209, 213, 216);
-	border: 1px solid black;
-	border-radius: 15px;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-	overflow: hidden;
-}
-
+/* GOOGLE SEARCH WIDGET STUFF */
 .gsc-control-cse {
 	/*rounds the borders on Google Search Results*/
 	border-radius: 16px;
@@ -209,35 +130,4 @@ div.editor dl {
 	/*I don't know why, but both of these are necessary to do so*/
 	line-height: 24px;
 }
-
-#structuralContainer13 {
-	/* This eliminates the extra space that's meant to be left for the homepage banners, which we've eliminated. */
-	padding-top: 1.5em;
-}
-
-.InfoAdvanced a.readOn,
-.widgetViewAll {
-	/* additional styling to make it obvious when focus is on footer "staff directory" and other "read on"-style buttons */
-	&:hover,
-	&:focus,
-	&:active {
-		color: white !important;
-		text-decoration: underline !important;
-		transform: scale(1.1);
-		transition: 0.1s linear;
-	}
-	&:focus {
-		outline: 3px solid var(--itdb-info-color);
-	}
-}
-
-.siteFooter .widget.skin70 a,
-.siteFooter .widget.skin62 a {
-	/* additional contrast on the quicklinks in the footer */
-	color: #454545;
-	&:hover,
-	&:focus,
-	&:active {
-		color: var(--itdb-red);
-	}
-}
+/* end of GOOGLE SEARCH WIDGET STUFF */
