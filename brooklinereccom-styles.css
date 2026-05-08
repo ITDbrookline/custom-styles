@@ -1,12 +1,13 @@
 :root {
-	--itdb-info-color: #3f9dc6;
-	--itdb-action-color: #1e6232;
-
 	--itdb-gold: #f7d72a;
 	--itdb-blue: #4ca8d1;
 	--itdb-dark-green: #1e6333;
 	--itdb-orange: #f78f2a;
 	--itdb-red: #dc4c47;
+
+	--itdb-info-color: #3f9dc6;
+	--itdb-action-color: #1e6232;
+	--itdb-searchBar_button--color: var(--itdb-blue);
 }
 
 *,
