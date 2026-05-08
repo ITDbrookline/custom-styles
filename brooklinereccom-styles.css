@@ -4,6 +4,7 @@
 	--itdb-dark-green: #1e6333;
 	--itdb-orange: #f78f2a;
 	--itdb-red: #dc4c47;
+	--itdb-red--accessible: #d93b36;
 
 	--itdb-info-color: #3f9dc6;
 	--itdb-action-color: #1e6232;
@@ -39,6 +40,7 @@ When the user's device has no preference, this script would default to smooth-sc
 .mainNav .topMenuItem:last-child {
 	background-color: var(--itdb-orange);
 	border-radius: 25px;
+	transition: 0.2s;
 	&:hover {
 		background-color: var(--itdb-blue);
 	}
@@ -99,7 +101,7 @@ h6 {
 	&:hover,
 	&:focus,
 	&:active {
-		color: var(--itdb-red);
+		color: var(--itdb-red--accessible);
 	}
 }
 
