@@ -103,6 +103,11 @@ h6 {
 	}
 }
 
+#structuralContainer11 {
+	/* 	hide weird blue sticky footer banner on the homepage */
+	display: none;
+}
+
 /* GOOGLE SEARCH WIDGET STUFF */
 .gsc-control-cse {
 	/*rounds the borders on Google Search Results*/
