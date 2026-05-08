@@ -65,10 +65,6 @@ h6 {
 	color: #757452;
 }
 
-.moduleContentNew a:link {
-	color: var(--itdb-red--accessible);
-}
-
 .itdb-button--info {
 	--itdb-button-color: var(--itdb-info-color);
 }
@@ -100,7 +96,7 @@ h6 {
 
 .siteFooter .widget.skin70 a,
 .siteFooter .widget.skin62 a {
-	/* additional contrast on the quicklinks in the footer */
+	/* Footer Quicklinks contrast */
 	color: #454545;
 	&:hover,
 	&:focus,
@@ -110,10 +106,16 @@ h6 {
 }
 
 .pageStyles,
-.widget.skin49 {
+.widget.skin49,
+.moduleContentNew {
 	a:link {
+		/* Editor and other widgets link contrast */
 		color: var(--itdb-red--accessible);
 	}
+}
+.widget.skin68 a.readOn {
+	/* Newsflash widgets 'read on' contrast */
+	color: var(--itdb-red--accessible);
 }
 
 #structuralContainer11 {
@@ -128,7 +130,7 @@ h6 {
 	overflow: hidden;
 }
 
-/*NOTICE that this targets the TDs, not the tables like on BrooklineMA.gov*/
+/* Transparent backgrounds */
 #___gcse_0 table,
 #___gcse_1 table,
 #___gcse_2 table {
