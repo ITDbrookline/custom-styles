@@ -110,10 +110,9 @@ h6 {
 }
 
 .pageStyles,
-.widget,
 .widget.skin49 {
 	a:link {
-		color: var(--itdb-dark-green);
+		color: var(--itdb-red--accessible);
 	}
 }
 
