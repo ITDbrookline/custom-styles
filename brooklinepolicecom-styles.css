@@ -87,26 +87,11 @@ h6 {
 	border-radius: 16px;
 	overflow: hidden;
 }
-.gsc-input-box {
-	/*rounds the corners on Google Search Bar*/
-	border-radius: 8px;
-	overflow: hidden;
-}
 
 /*NOTICE that this targets the TDs, not the tables like on BrooklineMA.gov*/
 #___gcse_0 td,
 #___gcse_1 td,
 #___gcse_2 td {
 	background-color: transparent;
-}
-
-.gsst_b {
-	/*helps to shrink the "X" button that appears when you type in text.*/
-	font-size: 0px;
-}
-.gscb_a {
-	/*ALSO helps to shrink the "X" button that appears when you type in text.*/
-	/*I don't know why, but both of these are necessary to do so*/
-	line-height: 24px;
 }
 /* end of GOOGLE SEARCH WIDGET STUFF */
