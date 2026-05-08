@@ -65,6 +65,10 @@ h6 {
 	color: #757452;
 }
 
+.moduleContentNew a:link {
+	color: var(--itdb-red--accessible);
+}
+
 .itdb-button--info {
 	--itdb-button-color: var(--itdb-info-color);
 }
@@ -102,6 +106,14 @@ h6 {
 	&:focus,
 	&:active {
 		color: var(--itdb-red--accessible);
+	}
+}
+
+.pageStyles,
+.widget,
+.widget.skin49 {
+	a:link {
+		color: var(--itdb-dark-green);
 	}
 }
 
