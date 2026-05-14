@@ -36,6 +36,11 @@ When the user's device has no preference, this script would default to smooth-sc
 	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0.2) 95%, rgba(0, 0, 0, 0) 100%);
 }
 
+/* Mega-menu dropdowns have better contrast and are not see-through, for accessibility */
+.megaMenu {
+	background-color: #327e9f;
+}
+
 /* Make rightmost global nav item orange */
 .mainNav .topMenuItem:last-child {
 	background-color: var(--itdb-orange);
