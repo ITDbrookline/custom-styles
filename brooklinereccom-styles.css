@@ -1,13 +1,14 @@
 :root {
 	--itdb-gold: #f7d72a;
 	--itdb-blue: #4ca8d1;
+	--itdb-blue--accessible: #3f9dc6;
 	--itdb-dark-green: #1e6333;
 	--itdb-orange: #f78f2a;
 	--itdb-red: #dc4c47;
 	--itdb-red--accessible: #d93b36;
 
-	--itdb-info-color: #3f9dc6;
-	--itdb-action-color: #1e6232;
+	--itdb-info-color: var(--itdb-blue--accessible);
+	--itdb-action-color: var(--itdb-dark-green);
 	--itdb-searchBar_button--color: var(--itdb-dark-green);
 }
 
@@ -17,7 +18,12 @@
 	/*When the user is forcibly scrolled to a particular part of the screen, scroll slightly too high so header doesn't overlap content.*/
 	scroll-margin-top: 7rem;
 }
-
+*:focus-visible {
+	/* Accessible outline color for everything  */
+	outline: 2px solid #195228 !important;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 4px #6a6a6a;
+}
 /* Commented out because I don't think it was working on Rec Site.
 When the user's device has no preference, this script would default to smooth-scrolling
 
@@ -87,15 +93,12 @@ h6 {
 .widgetViewAll {
 	/* makes it obvious when focus is on footer "staff directory" and other "read on"-style buttons */
 	&:hover,
-	&:focus,
+	&:focus-visible,
 	&:active {
 		color: white !important;
 		text-decoration: underline !important;
 		transform: scale(1.1);
 		transition: 0.1s linear;
-	}
-	&:focus {
-		outline: 3px solid var(--itdb-info-color);
 	}
 }
 
@@ -104,7 +107,7 @@ h6 {
 	/* Footer Quicklinks contrast */
 	color: #454545;
 	&:hover,
-	&:focus,
+	&:focus-visible,
 	&:active {
 		color: var(--itdb-red--accessible);
 	}

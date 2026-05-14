@@ -86,10 +86,10 @@ div.editor dl {
 .itdb-button--dpw-action {
 	background: var(--itdb-button-color);
 	&:hover,
-	&:focus {
+	&:focus-visible {
 		background: color-mix(in hsl, var(--itdb-button-color), white 10%);
 	}
-	&:focus:not(:active) {
+	&:focus-visible:not(:active) {
 		outline: 3px solid black;
 	}
 	&:active {
@@ -112,7 +112,7 @@ div.editor dl {
 		/* Subscriptions button */
 		background-color: var(--itdb-main-tan-green) !important;
 		&:hover,
-		&:focus {
+		&:focus-visible {
 			background-color: color-mix(in hsl, var(--itdb-main-tan-green), white 10%) !important;
 		}
 		&:active {

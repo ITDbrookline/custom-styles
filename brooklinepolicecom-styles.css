@@ -16,6 +16,12 @@ When the user is forcibly scrolled to a particular part of the screen, this scri
 	scroll-margin-top: 7rem;
 }
   */
+*:focus-visible {
+	/* Accessible outline color for everything  */
+	outline: 2px solid #842724 !important;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 4px white;
+}
 
 /* Commented out because I don't think it was working on Police Site.
 When the user's device has no preference, this script would default to smooth-scrolling
