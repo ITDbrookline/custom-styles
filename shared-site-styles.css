@@ -1,3 +1,10 @@
+*:focus-visible {
+	/* Accessible outline color for everything  */
+	outline: 2px solid var(--itdb-focusOutline--color) !important;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 4px white;
+}
+
 h5,
 h6 {
 	font-size: 0.95em;

@@ -9,18 +9,13 @@
 	--itdb-dpw-info-color: #17874d;
 	--itdb-dpw-action-color: #be5513;
 	--itdb-searchBar_button--color: var(--itdb-main-light-green);
+	--itdb-focusOutline--color: var(--itdb-main-charcoal);
 }
 #05BFF1 *,
 *::before,
 *::after {
 	/*When the user is forcibly scrolled to a particular part of the screen, scroll slightly too high so header doesn't overlap content.*/
 	scroll-margin-top: 7rem;
-}
-*:focus-visible {
-	/* Accessible outline color for everything  */
-	outline: 2px solid var(--itdb-main-charcoal) !important;
-	outline-offset: 2px;
-	box-shadow: 0 0 0 4px white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
