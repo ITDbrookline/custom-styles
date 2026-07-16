@@ -70,6 +70,11 @@ div.editor dl {
 	}
 }
 
+.article-header-image-right img {
+	/* In Newsflash entries with the image floated right, don't crop the image*/
+	object-fit: contain !important;
+}
+
 /* Colorful button styles */
 .itdb-button--medium {
 	width: 14em;
