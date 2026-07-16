@@ -50,9 +50,4 @@ form.itdb-search--form {
 		border: none;
 		border-radius: inherit;
 	}
-	input:focus,
-	button:focus {
-		outline: 2px solid blue; /* or your brand color */
-		outline-offset: 2px;
-	}
 }

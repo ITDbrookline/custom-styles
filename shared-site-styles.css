@@ -1,3 +1,10 @@
+*:focus-visible {
+	/* Accessible outline color for everything  */
+	outline: 2px solid var(--itdb-focusOutline--color) !important;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 4px white;
+}
+
 h5,
 h6 {
 	font-size: 0.95em;
@@ -91,10 +98,10 @@ div.editor dl {
 .itdb-button--dpw-action {
 	background: var(--itdb-button-color);
 	&:hover,
-	&:focus {
+	&:focus-visible {
 		background: color-mix(in hsl, var(--itdb-button-color), white 10%);
 	}
-	&:focus:not(:active) {
+	&:focus-visible:not(:active) {
 		outline: 3px solid black;
 	}
 	&:active {
@@ -117,7 +124,7 @@ div.editor dl {
 		/* Subscriptions button */
 		background-color: var(--itdb-main-tan-green) !important;
 		&:hover,
-		&:focus {
+		&:focus-visible {
 			background-color: color-mix(in hsl, var(--itdb-main-tan-green), white 10%) !important;
 		}
 		&:active {

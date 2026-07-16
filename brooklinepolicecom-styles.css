@@ -1,7 +1,12 @@
 :root {
-	--itdb-info-color: #1c326d;
-	--itdb-action-color: #9c2f2b;
+	--itdb-blue: #0e2972;
 	--itdb-gold: #f6d00a;
+	--itdb-red: #9c2f2b;
+
+	--itdb-info-color: var(--itdb-blue);
+	--itdb-action-color: var(--itdb-red);
+	--itdb-searchBar_button--color: var(--itdb-blue);
+	--itdb-focusOutline--color: #842724;
 }
 /* Commented out because I don't think it was working on Police Site.
 When the user is forcibly scrolled to a particular part of the screen, this script will make it scroll slightly too high so header doesn't overlap content.
@@ -27,6 +32,11 @@ When the user's device has no preference, this script would default to smooth-sc
 	display: block;
 	-webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 100%);
 	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 100%);
+}
+
+#searchTS {
+	/* Margin for the search bar so it's not scraping the bottom of the header. */
+	margin-bottom: 1em;
 }
 
 @media (min-width: 1200px) {
@@ -78,26 +88,11 @@ h6 {
 	border-radius: 16px;
 	overflow: hidden;
 }
-.gsc-input-box {
-	/*rounds the corners on Google Search Bar*/
-	border-radius: 8px;
-	overflow: hidden;
-}
 
 /*NOTICE that this targets the TDs, not the tables like on BrooklineMA.gov*/
 #___gcse_0 td,
 #___gcse_1 td,
 #___gcse_2 td {
 	background-color: transparent;
-}
-
-.gsst_b {
-	/*helps to shrink the "X" button that appears when you type in text.*/
-	font-size: 0px;
-}
-.gscb_a {
-	/*ALSO helps to shrink the "X" button that appears when you type in text.*/
-	/*I don't know why, but both of these are necessary to do so*/
-	line-height: 24px;
 }
 /* end of GOOGLE SEARCH WIDGET STUFF */

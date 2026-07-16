@@ -1,12 +1,16 @@
 :root {
-	--itdb-info-color: #3f9dc6;
-	--itdb-action-color: #1e6232;
-
 	--itdb-gold: #f7d72a;
 	--itdb-blue: #4ca8d1;
+	--itdb-blue--accessible: #3f9dc6;
 	--itdb-dark-green: #1e6333;
 	--itdb-orange: #f78f2a;
 	--itdb-red: #dc4c47;
+	--itdb-red--accessible: #d93b36;
+
+	--itdb-info-color: var(--itdb-blue--accessible);
+	--itdb-action-color: var(--itdb-dark-green);
+	--itdb-searchBar_button--color: var(--itdb-dark-green);
+	--itdb-focusOutline--color: #195228;
 }
 
 *,
@@ -15,7 +19,6 @@
 	/*When the user is forcibly scrolled to a particular part of the screen, scroll slightly too high so header doesn't overlap content.*/
 	scroll-margin-top: 7rem;
 }
-
 /* Commented out because I don't think it was working on Rec Site.
 When the user's device has no preference, this script would default to smooth-scrolling
 
@@ -34,10 +37,16 @@ When the user's device has no preference, this script would default to smooth-sc
 	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0.2) 95%, rgba(0, 0, 0, 0) 100%);
 }
 
+/* Mega-menu dropdowns have better contrast and are not see-through, for accessibility */
+.megaMenu {
+	background-color: #327e9f;
+}
+
 /* Make rightmost global nav item orange */
 .mainNav .topMenuItem:last-child {
 	background-color: var(--itdb-orange);
 	border-radius: 25px;
+	transition: 0.2s;
 	&:hover {
 		background-color: var(--itdb-blue);
 	}
@@ -79,27 +88,37 @@ h6 {
 .widgetViewAll {
 	/* makes it obvious when focus is on footer "staff directory" and other "read on"-style buttons */
 	&:hover,
-	&:focus,
+	&:focus-visible,
 	&:active {
 		color: white !important;
 		text-decoration: underline !important;
 		transform: scale(1.1);
 		transition: 0.1s linear;
 	}
-	&:focus {
-		outline: 3px solid var(--itdb-info-color);
-	}
 }
 
 .siteFooter .widget.skin70 a,
 .siteFooter .widget.skin62 a {
-	/* additional contrast on the quicklinks in the footer */
+	/* Footer Quicklinks contrast */
 	color: #454545;
 	&:hover,
-	&:focus,
+	&:focus-visible,
 	&:active {
-		color: var(--itdb-red);
+		color: var(--itdb-red--accessible);
 	}
+}
+
+.pageStyles,
+.widget.skin49,
+.moduleContentNew {
+	a:link {
+		/* Editor and other widgets link contrast */
+		color: var(--itdb-red--accessible);
+	}
+}
+.widget.skin68 a.readOn {
+	/* Newsflash widgets 'read on' contrast */
+	color: var(--itdb-red--accessible);
 }
 
 #structuralContainer11 {
@@ -113,26 +132,11 @@ h6 {
 	border-radius: 16px;
 	overflow: hidden;
 }
-.gsc-input-box {
-	/*rounds the corners on Google Search Bar*/
-	border-radius: 8px;
-	overflow: hidden;
-}
 
-/*NOTICE that this targets the TDs, not the tables like on BrooklineMA.gov*/
+/* Transparent backgrounds */
 #___gcse_0 table,
 #___gcse_1 table,
 #___gcse_2 table {
 	background-color: transparent;
-}
-
-.gsst_b {
-	/*helps to shrink the "X" button that appears when you type in text.*/
-	font-size: 0px;
-}
-.gscb_a {
-	/*ALSO helps to shrink the "X" button that appears when you type in text.*/
-	/*I don't know why, but both of these are necessary to do so*/
-	line-height: 24px;
 }
 /* end of GOOGLE SEARCH WIDGET STUFF */
