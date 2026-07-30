@@ -162,10 +162,17 @@ div.editor dl {
 	margin: 0.5em;
 	padding: 1em;
 	background-color: #e4e7e7;
-	border: 1px solid black;
 	border-radius: 15px;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
+}
+
+.fr-view table,
+.fr-view .itdb-highlight-box {
+	/* Make all Editor Widget tables & highlight boxes have a bit of a box-shadow */
+	border: 1px solid LightSlateGrey;
+	--table-shadow: 1px 2px 7px 2px rgba(0, 0, 0, 0.3);
+
+	box-shadow: var(--table-shadow);
+	-webkit-box-shadow: var(--table-shadow);
+	-moz-box-shadow: var(--table-shadow);
 }

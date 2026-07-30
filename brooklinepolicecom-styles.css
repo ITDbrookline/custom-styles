@@ -81,18 +81,3 @@ h6 {
 		font-size: 1.4em;
 	}
 }
-
-/* GOOGLE SEARCH WIDGET STUFF */
-.gsc-control-cse {
-	/*rounds the borders on Google Search Results*/
-	border-radius: 16px;
-	overflow: hidden;
-}
-
-/*NOTICE that this targets the TDs, not the tables like on BrooklineMA.gov*/
-#___gcse_0 td,
-#___gcse_1 td,
-#___gcse_2 td {
-	background-color: transparent;
-}
-/* end of GOOGLE SEARCH WIDGET STUFF */
