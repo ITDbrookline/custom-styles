@@ -1,0 +1,58 @@
+:root {
+	--itdb-dark-green: #1d3f00;
+	--itdb-light-green: #75a201;
+	--itdb-tan-green: #c6dbc3;
+	--itdb-charcoal: #1d1d1b;
+
+	--itdb-info-color: #17874d;
+	--itdb-action-color: #be5513;
+	--itdb-searchBar_button--color: var(--itdb-light-green);
+	--itdb-focusOutline--color: var(--itdb-charcoal);
+}
+*,
+*::before,
+*::after {
+	/*When the user is forcibly scrolled to a particular part of the screen, scroll slightly too high so header doesn't overlap content.*/
+	scroll-margin-top: 7rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	} /*When the user's device has no preference, default to smooth-scrolling*/
+}
+
+/* Make the image banner bottoms fade to white on Interior and Simple pages. Doesn't work on homepage because the image is cut off on bottom.*/
+
+#bannerDivbanner1 {
+	position: relative;
+}
+
+#bannerDivbanner1::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0) 60%,
+		rgba(255, 255, 255, 0.9) 90%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}
+
+h5 {
+	color: var(--itdb-light-green);
+}
+h6 {
+	color: #757452;
+}
+
+.itdb-button--info,
+.itdb-button--dpw-info {
+	--itdb-button-color: var(--itdb-info-color);
+}
+.itdb-button--action,
+.itdb-button--dpw-action {
+	--itdb-button-color: var(--itdb-action-color);
+}
