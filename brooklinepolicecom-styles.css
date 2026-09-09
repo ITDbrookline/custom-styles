@@ -14,7 +14,7 @@ When the user is forcibly scrolled to a particular part of the screen, this scri
 *,
 *::before,
 *::after {
-	scroll-margin-top: 7rem;
+	scroll-padding-top: 7rem;
 }
   */
 

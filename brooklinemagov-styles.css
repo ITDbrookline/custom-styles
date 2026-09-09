@@ -9,11 +9,12 @@
 	--itdb-searchBar_button--color: var(--itdb-light-green);
 	--itdb-focusOutline--color: var(--itdb-charcoal);
 }
+
 *,
 *::before,
 *::after {
 	/*When the user is forcibly scrolled to a particular part of the screen, scroll slightly too high so header doesn't overlap content.*/
-	scroll-margin-top: 7rem;
+	scroll-padding-top: 7rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
