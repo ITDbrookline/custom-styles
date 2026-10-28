@@ -1,12 +1,12 @@
 :root {
-	--itdb-blue: #0e2972;
-	--itdb-gold: #f6d00a;
-	--itdb-red: #9c2f2b;
+  --itdb-blue: #0e2972;
+  --itdb-gold: #f6d00a;
+  --itdb-red: #9c2f2b;
 
-	--itdb-info-color: var(--itdb-blue);
-	--itdb-action-color: var(--itdb-red);
-	--itdb-searchBar_button--color: var(--itdb-blue);
-	--itdb-focusOutline--color: #842724;
+  --itdb-info-color: var(--itdb-blue);
+  --itdb-action-color: var(--itdb-red);
+  --itdb-searchBar_button--color: var(--itdb-blue);
+  --itdb-focusOutline--color: #842724;
 }
 /* Commented out because I don't think it was working on Police Site.
 When the user is forcibly scrolled to a particular part of the screen, this script will make it scroll slightly too high so header doesn't overlap content.
@@ -29,55 +29,70 @@ When the user's device has no preference, this script would default to smooth-sc
 */
 
 #bannerContainerTS img {
-	display: block;
-	-webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 100%);
-	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0.1) 90%, rgba(0, 0, 0, 0) 100%);
+  display: block;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0.1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0.1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 #searchTS {
-	/* Margin for the search bar so it's not scraping the bottom of the header. */
-	margin-bottom: 1em;
+  /* Margin for the search bar so it's not scraping the bottom of the header. */
+  margin-bottom: 1em;
+}
+
+#mainContainerTS > div.inner {
+  /* Makes sure the 'flag' image in the background is big enough for the page */
+  background-size: cover;
 }
 
 @media (min-width: 1200px) {
-	#searchTS {
-		margin-top: 0px;
-	}
-	#bannerLogo2TS {
-		margin-top: 25px;
-	}
+  #searchTS {
+    margin-top: 0px;
+  }
+  #bannerLogo2TS {
+    margin-top: 25px;
+  }
 }
 
 /* Adding borders and darker text to tabbed widget tabs, to make them easier to read */
 ol.cpTabs > li:not(.active) > a {
-	border: 2px solid #b8b8b8;
-	border-radius: 4px;
+  border: 2px solid #b8b8b8;
+  border-radius: 4px;
 }
 
 h5 {
-	color: #cb4743;
+  color: #cb4743;
 }
 h6 {
-	color: #757452;
+  color: #757452;
 }
 
 .itdb-button--info {
-	--itdb-button-color: var(--itdb-info-color);
+  --itdb-button-color: var(--itdb-info-color);
 }
 
 .itdb-button--action {
-	--itdb-button-color: var(--itdb-action-color);
+  --itdb-button-color: var(--itdb-action-color);
 }
 
 @media (min-width: 1250px) {
-	/* Adjusts look of the homepage banner captions */
-	.widget.skin71 .itemCaption.overlay {
-		bottom: 20% !important;
-	}
-	.widget.skin71 .overlayInner::after {
-		padding: 1em 0;
-	}
-	.widget.skin71 .widgetItem {
-		font-size: 1.4em;
-	}
+  /* Adjusts look of the homepage banner captions */
+  .widget.skin71 .itemCaption.overlay {
+    bottom: 20% !important;
+  }
+  .widget.skin71 .overlayInner::after {
+    padding: 1em 0;
+  }
+  .widget.skin71 .widgetItem {
+    font-size: 1.4em;
+  }
 }
